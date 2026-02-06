@@ -1,7 +1,5 @@
 # Static Slither Inconsistent State Detector
 
-## Author: Vladislav Usatii
-
 ## Overview
 
 A static inconsistent state detector for Eth contracts that builds an SDG atop each function's CFG, prunes to externally reachable paths, and utilizes forward-slicing to keep read/write interactions which drive control-flow or external-call divergence. Detects stale-read and destruive-write reaces including cross-function reentrancy support. Buckets issues by transaction sets and multi-variable groups and emits exploit-ready JSON with slots, selectors, and source locations for future validation via dynamic exploit generation.

@@ -1,0 +1,8 @@
+id	name	env_json
+0	baseline	{"DIVERGENCE_BUDGET":"1000","SINK_TEST":"value"}
+1	no_init_only	{"DIVERGENCE_BUDGET":"1000","INIT_ONLY_FILTER":"0","SINK_TEST":"value"}
+2	no_admin_benign	{"ADMIN_WRITES_BENIGN":"0","DIVERGENCE_BUDGET":"1000","SINK_TEST":"value"}
+3	sink_none	{"DIVERGENCE_BUDGET":"1000","SINK_TEST":"none"}
+4	sink_samevar	{"DIVERGENCE_BUDGET":"1000","SINK_TEST":"samevar"}
+5	budget_0	{"DIVERGENCE_BUDGET":"0","SINK_TEST":"value"}
+6	budget_inf	{"DIVERGENCE_BUDGET":"inf","SINK_TEST":"value"}

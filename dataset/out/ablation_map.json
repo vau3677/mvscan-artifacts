@@ -1,0 +1,60 @@
+[
+  {
+    "id": 0,
+    "name": "baseline",
+    "env": {
+      "DIVERGENCE_BUDGET": "1000",
+      "SINK_TEST": "value"
+    }
+  },
+  {
+    "id": 1,
+    "name": "no_init_only",
+    "env": {
+      "DIVERGENCE_BUDGET": "1000",
+      "INIT_ONLY_FILTER": "0",
+      "SINK_TEST": "value"
+    }
+  },
+  {
+    "id": 2,
+    "name": "no_admin_benign",
+    "env": {
+      "ADMIN_WRITES_BENIGN": "0",
+      "DIVERGENCE_BUDGET": "1000",
+      "SINK_TEST": "value"
+    }
+  },
+  {
+    "id": 3,
+    "name": "sink_none",
+    "env": {
+      "DIVERGENCE_BUDGET": "1000",
+      "SINK_TEST": "none"
+    }
+  },
+  {
+    "id": 4,
+    "name": "sink_samevar",
+    "env": {
+      "DIVERGENCE_BUDGET": "1000",
+      "SINK_TEST": "samevar"
+    }
+  },
+  {
+    "id": 5,
+    "name": "budget_0",
+    "env": {
+      "DIVERGENCE_BUDGET": "0",
+      "SINK_TEST": "value"
+    }
+  },
+  {
+    "id": 6,
+    "name": "budget_inf",
+    "env": {
+      "DIVERGENCE_BUDGET": "inf",
+      "SINK_TEST": "value"
+    }
+  }
+]

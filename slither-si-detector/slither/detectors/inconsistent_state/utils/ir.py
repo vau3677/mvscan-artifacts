@@ -1,8 +1,6 @@
 """
 ir.py
 Goal: Better checks using Slither's IR to enable high precision
-
-Author: Vladislav Usatii (vau3677@rit.edu)
 """
 from slither.slithir.operations import OperationWithLValue
 from slither.core.cfg.node import NodeType

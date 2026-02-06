@@ -1,8 +1,6 @@
 """
 alias.py
 Canonicalises every external call as a key and maps that key to the concrete state variable (or slot wrapper) it aliases
-
-Author: Vladislav Usatii (vau3677@rit.edu)
 """
 from collections import defaultdict
 from dataclasses import dataclass

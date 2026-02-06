@@ -1,6 +1,5 @@
 """
 MV-Scan (Multi-Variable State-Inconsistency Detection)
-Author: Vladislav Usatii (vau3677@rit.edu)
 
 Goals:
 - Build an SDG over the compilation and its storage layout.

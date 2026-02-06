@@ -1,8 +1,6 @@
 """
 sdg.py
 Implementation of our SDG for MV-SCAN
-
-Author: Vladislav Usatii (vau3677@rit.edu)
 """
 import os, re
 from typing import Dict, Set, Tuple
