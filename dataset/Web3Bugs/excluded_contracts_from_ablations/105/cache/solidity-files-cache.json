@@ -1,0 +1,899 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/HolyPaladinToken.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "00496047d88a88d007c3bc75b4e614ce",
+      "sourceName": "contracts/HolyPaladinToken.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [
+        "./open-zeppelin/ERC20.sol",
+        "./open-zeppelin/utils/Ownable.sol",
+        "./open-zeppelin/interfaces/IERC20.sol",
+        "./open-zeppelin/libraries/SafeERC20.sol",
+        "./open-zeppelin/utils/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "HolyPaladinToken"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/ERC20.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "9c175c4b3e646dc83353eafed487416d",
+      "sourceName": "contracts/open-zeppelin/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [
+        "./interfaces/IERC20.sol",
+        "./interfaces/IERC20Metadata.sol",
+        "./utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/utils/Ownable.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "4fe4155d36c099e1005316ebaa1c507d",
+      "sourceName": "contracts/open-zeppelin/utils/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/libraries/SafeERC20.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "92a6232467fbe20b7f4d01b48102b6c8",
+      "sourceName": "contracts/open-zeppelin/libraries/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/utils/Math.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "d78adc6a4dc38b176934758abac5fb60",
+      "sourceName": "contracts/open-zeppelin/utils/Math.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/interfaces/IERC20.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "cb67ca95371b67c0f72b0095b632281e",
+      "sourceName": "contracts/open-zeppelin/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/interfaces/IERC20Metadata.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "89607660f880fff0fba51eaec549fe49",
+      "sourceName": "contracts/open-zeppelin/interfaces/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/utils/Context.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "74dd7901598e45d0e871e97ed75b1464",
+      "sourceName": "contracts/open-zeppelin/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/utils/Address.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "750b244702a16ef3d8e27714bf457403",
+      "sourceName": "contracts/open-zeppelin/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/PaladinRewardReserve.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "020c07eb1ec2fcfd932a97fd7b482e1e",
+      "sourceName": "contracts/PaladinRewardReserve.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [
+        "./open-zeppelin/utils/Ownable.sol",
+        "./open-zeppelin/utils/ReentrancyGuard.sol",
+        "./open-zeppelin/interfaces/IERC20.sol",
+        "./open-zeppelin/libraries/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "PaladinRewardReserve"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "159724b6de9fd97c9b5e28bf38fc12ea",
+      "sourceName": "contracts/open-zeppelin/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/test/PaladinToken.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "f680437c33e21cfcd683e8e7bbc5e318",
+      "sourceName": "contracts/test/PaladinToken.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [
+        "../open-zeppelin/ERC20.sol",
+        "../open-zeppelin/AccessControl.sol",
+        "../open-zeppelin/utils/Math.sol",
+        "../open-zeppelin/utils/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "PaladinToken"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/AccessControl.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "4f58e0636dd4f3bb5148f446dd335ee3",
+      "sourceName": "contracts/open-zeppelin/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [
+        "./interfaces/IAccessControl.sol",
+        "./utils/Context.sol",
+        "./utils/Strings.sol",
+        "./utils/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/utils/ECDSA.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "917adc2938e830d64656ff6964407037",
+      "sourceName": "contracts/open-zeppelin/utils/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/interfaces/IAccessControl.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "26f64c43a824b8fe2007f72a3af68731",
+      "sourceName": "contracts/open-zeppelin/interfaces/IAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControl"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/utils/Strings.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "d9acdb1d103397f02e0f8d0acd5f46ec",
+      "sourceName": "contracts/open-zeppelin/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/utils/ERC165.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "e7fd0eda8c72231de5347bcd2506a8bb",
+      "sourceName": "contracts/open-zeppelin/utils/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [
+        "../interfaces/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/interfaces/IERC165.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "3e75af5c8391ff9795a51843c64f9561",
+      "sourceName": "contracts/open-zeppelin/interfaces/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/interfaces/IMerkleDistributor.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "cfec8112eeebc90b60e96ec3f62cb262",
+      "sourceName": "contracts/open-zeppelin/interfaces/IMerkleDistributor.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IMerkleDistributor"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/105/contracts/open-zeppelin/utils/MerkleProof.sol": {
+      "lastModificationDate": 1759178521362,
+      "contentHash": "f82a1fcdcb1f8282f6e3d662c04fbf58",
+      "sourceName": "contracts/open-zeppelin/utils/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "metadata",
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode",
+                "evm.deployedBytecode.sourceMap",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris"
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    }
+  }
+}

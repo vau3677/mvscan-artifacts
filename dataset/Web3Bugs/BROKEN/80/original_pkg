@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^6.2.0",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.8.0",
+    "hardhat": "^2.26.3",
+    "hardhat-gas-reporter": "^2.3.0",
+    "solidity-coverage": "^0.8.16"
+  },
+  "dependencies": {
+    "@yield-protocol/utils-v2": "^2.6.18",
+    "@yield-protocol/vault-interfaces": "^2.5.0",
+    "@yield-protocol/yieldspace-interfaces": "^2.3.2",
+    "dss-interfaces": "^0.1.1"
+  }
+}

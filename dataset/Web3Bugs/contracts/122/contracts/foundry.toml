@@ -1,0 +1,15 @@
+[default]
+solc_version = "0.8.13"
+fuzz_runs = 1000
+optimizer_runs = 1000
+optimizer = true
+
+[ci]
+fuzz-runs = 1000
+
+[profile.default]
+
+# Ensure storage layout for static analysis
+extra_output = ["storageLayout"]
+build_info = true
+auto_detect_solc = true

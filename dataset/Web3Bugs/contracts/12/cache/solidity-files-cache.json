@@ -1,0 +1,3313 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/Cauldron.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "dfde988d313db361b75ff2229e9c9d24",
+      "sourceName": "contracts/Cauldron.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/vault/IFYToken.sol",
+        "./interfaces/vault/IOracle.sol",
+        "./interfaces/vault/DataTypes.sol",
+        "./utils/access/AccessControl.sol",
+        "./math/WMul.sol",
+        "./math/WDiv.sol",
+        "./math/CastU128I128.sol",
+        "./math/CastI128U128.sol",
+        "./math/CastU256U32.sol",
+        "./math/CastU256I256.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Cauldron",
+        "CauldronMath"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/vault/IFYToken.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "77b1e58fbd7147228a0f4352ecdc1493",
+      "sourceName": "contracts/interfaces/vault/IFYToken.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../external/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IFYToken"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/vault/IOracle.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "5243387383272208111f060397986479",
+      "sourceName": "contracts/interfaces/vault/IOracle.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOracle"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/vault/DataTypes.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "f8ae5bf42f2c81a2beb278576599bd33",
+      "sourceName": "contracts/interfaces/vault/DataTypes.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IFYToken.sol",
+        "./IOracle.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DataTypes"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/utils/access/AccessControl.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "e1f93bbdbec0938dfaf64a0ef98443bf",
+      "sourceName": "contracts/utils/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/math/WMul.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "ef183d30c1c658e5d9b682f3caef6ca2",
+      "sourceName": "contracts/math/WMul.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WMul"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/math/WDiv.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "b8bd66da6da78a7e65a1d8454db43bb4",
+      "sourceName": "contracts/math/WDiv.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WDiv"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/math/CastU128I128.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "26dc9b60bd60a6dcd51fab2d587c33da",
+      "sourceName": "contracts/math/CastU128I128.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CastU128I128"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/math/CastI128U128.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "a4af767d399ee29347a94d1633f17764",
+      "sourceName": "contracts/math/CastI128U128.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CastI128U128"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/math/CastU256U32.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "02dd017e6c33aeffffc8863219dff720",
+      "sourceName": "contracts/math/CastU256U32.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CastU256U32"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/math/CastU256I256.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "42bf1e0957675e72478cd67aa847750b",
+      "sourceName": "contracts/math/CastU256I256.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CastU256I256"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/external/IERC20.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "776f140b8a9f56eddcebbf9a07982c7c",
+      "sourceName": "contracts/interfaces/external/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/FYToken.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "084c706c9463a34d9e176e21f9ad791f",
+      "sourceName": "contracts/FYToken.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "erc3156/contracts/interfaces/IERC3156FlashBorrower.sol",
+        "erc3156/contracts/interfaces/IERC3156FlashLender.sol",
+        "./utils/token/ERC20Permit.sol",
+        "./interfaces/vault/IFYToken.sol",
+        "./interfaces/vault/IJoin.sol",
+        "./interfaces/vault/IOracle.sol",
+        "./utils/access/AccessControl.sol",
+        "./math/WMul.sol",
+        "./math/WDiv.sol",
+        "./math/CastU256U128.sol",
+        "./math/CastU256U32.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FYToken"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/node_modules/erc3156/contracts/interfaces/IERC3156FlashBorrower.sol": {
+      "lastModificationDate": 1759250769415,
+      "contentHash": "c78ab7ef731c2b040b3e709f5b2dc9bd",
+      "sourceName": "erc3156/contracts/interfaces/IERC3156FlashBorrower.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.9.0"
+      ],
+      "artifacts": [
+        "IERC3156FlashBorrower"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/node_modules/erc3156/contracts/interfaces/IERC3156FlashLender.sol": {
+      "lastModificationDate": 1759250769415,
+      "contentHash": "cbd1895591d4e92d0ed90ebb1cc14c44",
+      "sourceName": "erc3156/contracts/interfaces/IERC3156FlashLender.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC3156FlashBorrower.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.9.0"
+      ],
+      "artifacts": [
+        "IERC3156FlashLender"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/utils/token/ERC20Permit.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "9160ccc47552789171fb56da04e3b64f",
+      "sourceName": "contracts/utils/token/ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "../../interfaces/external/IERC2612.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/vault/IJoin.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "20acb8bb5a016c26d2aca1c59c8aa470",
+      "sourceName": "contracts/interfaces/vault/IJoin.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../external/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IJoin"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/math/CastU256U128.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "d2a92b89ba9969dad3e9e1e8f564949f",
+      "sourceName": "contracts/math/CastU256U128.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CastU256U128"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/utils/token/ERC20.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "71d161e7ef840bdbcab4250df7188b60",
+      "sourceName": "contracts/utils/token/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/external/IERC20Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/external/IERC2612.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "e420861b28de80b995a8247ab92ca787",
+      "sourceName": "contracts/interfaces/external/IERC2612.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC2612"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/external/IERC20Metadata.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "98c2b0a5592ce23838c86d5663eef914",
+      "sourceName": "contracts/interfaces/external/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/Wand.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "a8cae34e82318b218bc75c911b3c3c4a",
+      "sourceName": "contracts/Wand.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/vault/ICauldronGov.sol",
+        "./interfaces/vault/ILadleGov.sol",
+        "./interfaces/vault/IMultiOracleGov.sol",
+        "./interfaces/vault/IJoinFactory.sol",
+        "./interfaces/vault/IJoin.sol",
+        "./interfaces/vault/DataTypes.sol",
+        "./interfaces/yieldspace/IPoolFactory.sol",
+        "./utils/access/AccessControl.sol",
+        "./FYToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOwnable",
+        "Wand"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/vault/ICauldronGov.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "f04a8dcf0f2518fe900e8233453ea1ad",
+      "sourceName": "contracts/interfaces/vault/ICauldronGov.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IFYToken.sol",
+        "./IOracle.sol",
+        "./DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ICauldronGov"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/vault/ILadleGov.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "9d193d4d37a899e95e63b01534ed79d1",
+      "sourceName": "contracts/interfaces/vault/ILadleGov.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IJoin.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ILadleGov"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/vault/IMultiOracleGov.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "0583dedc9d5c774c230441ae1e9edb44",
+      "sourceName": "contracts/interfaces/vault/IMultiOracleGov.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IMultiOracleGov"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/vault/IJoinFactory.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "1074c69dfc186cc22faf36b914cdeaa1",
+      "sourceName": "contracts/interfaces/vault/IJoinFactory.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IJoinFactory"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/yieldspace/IPoolFactory.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "d05239a5858c2408d47cc08c6a7442d7",
+      "sourceName": "contracts/interfaces/yieldspace/IPoolFactory.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IPoolFactory"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/Witch.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "ce50f084ba71682628f2c51991ca5f55",
+      "sourceName": "contracts/Witch.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./utils/access/AccessControl.sol",
+        "./interfaces/vault/ILadle.sol",
+        "./interfaces/vault/ICauldron.sol",
+        "./interfaces/vault/DataTypes.sol",
+        "./math/WMul.sol",
+        "./math/WDiv.sol",
+        "./math/WDivUp.sol",
+        "./math/CastU256U128.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Witch"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/vault/ILadle.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "65f352631be39fde95d7660ff21ed1fd",
+      "sourceName": "contracts/interfaces/vault/ILadle.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ILadle"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/vault/ICauldron.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "db3b8e9f089dda60aa727acce409e84a",
+      "sourceName": "contracts/interfaces/vault/ICauldron.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IFYToken.sol",
+        "./IOracle.sol",
+        "./DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ICauldron"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/math/WDivUp.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "8a0c498965f0664c214fe65e4f354fb6",
+      "sourceName": "contracts/math/WDivUp.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WDivUp"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/Ladle.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "2438c6d560783764f19cc7e1f0405bfd",
+      "sourceName": "contracts/Ladle.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/vault/IFYToken.sol",
+        "./interfaces/vault/IJoin.sol",
+        "./interfaces/vault/ICauldron.sol",
+        "./interfaces/vault/IOracle.sol",
+        "./interfaces/vault/DataTypes.sol",
+        "./interfaces/yieldspace/IPool.sol",
+        "./interfaces/external/IERC20.sol",
+        "./interfaces/external/IERC2612.sol",
+        "dss-interfaces/src/dss/DaiAbstract.sol",
+        "./utils/access/AccessControl.sol",
+        "./utils/token/TransferHelper.sol",
+        "./interfaces/external/IWETH9.sol",
+        "./math/WMul.sol",
+        "./math/CastU256U128.sol",
+        "./math/CastU128I128.sol",
+        "./LadleStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ladle"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/yieldspace/IPool.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "893b091c5ed6fd1ef3b366ab2735f16d",
+      "sourceName": "contracts/interfaces/yieldspace/IPool.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../external/IERC20.sol",
+        "../external/IERC2612.sol",
+        "../vault/IFYToken.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IPool"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/node_modules/dss-interfaces/src/dss/DaiAbstract.sol": {
+      "lastModificationDate": 1759250769407,
+      "contentHash": "f6f023875d7a7092f739aaa356e1080f",
+      "sourceName": "dss-interfaces/src/dss/DaiAbstract.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.12"
+      ],
+      "artifacts": [
+        "DaiAbstract"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/utils/token/TransferHelper.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "bed1c5dcbef175d8b21e7122daed346c",
+      "sourceName": "contracts/utils/token/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/external/IERC20.sol",
+        "../RevertMsgExtractor.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/external/IWETH9.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "4bc4a1c5dad9b043692f4a58fbb9164c",
+      "sourceName": "contracts/interfaces/external/IWETH9.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWETH9"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/LadleStorage.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "3d9e1da1e26980776bcc535e697cf03c",
+      "sourceName": "contracts/LadleStorage.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/vault/ICauldron.sol",
+        "./interfaces/vault/IJoin.sol",
+        "./interfaces/yieldspace/IPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LadleStorage"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/utils/RevertMsgExtractor.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "cba8ca48b27e56024f1c7fffe20ce4e5",
+      "sourceName": "contracts/utils/RevertMsgExtractor.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "RevertMsgExtractor"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/yieldspace/PoolRouter.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "5d6824bec75232463c8a94d4cc2a451c",
+      "sourceName": "contracts/yieldspace/PoolRouter.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/token/TransferHelper.sol",
+        "../utils/RevertMsgExtractor.sol",
+        "../interfaces/external/IERC20.sol",
+        "../interfaces/external/IERC2612.sol",
+        "../interfaces/external/IWETH9.sol",
+        "../interfaces/yieldspace/IPool.sol",
+        "../interfaces/yieldspace/IPoolFactory.sol",
+        "../interfaces/yieldspace/PoolDataTypes.sol",
+        "dss-interfaces/src/dss/DaiAbstract.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "PoolRouter"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/interfaces/yieldspace/PoolDataTypes.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "5d8305e48eb979e2f94c1dc034d86c59",
+      "sourceName": "contracts/interfaces/yieldspace/PoolDataTypes.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "PoolDataTypes"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/yieldspace/PoolFactory.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "55723349a30c10a133149e54f66eafad",
+      "sourceName": "contracts/yieldspace/PoolFactory.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/yieldspace/IPoolFactory.sol",
+        "./Pool.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "PoolFactory"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/yieldspace/Pool.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "8192753eb5d660c42170cdf2b9d69619",
+      "sourceName": "contracts/yieldspace/Pool.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/access/Ownable.sol",
+        "../interfaces/external/IERC20.sol",
+        "../interfaces/external/IERC20Metadata.sol",
+        "../utils/token/ERC20Permit.sol",
+        "../utils/token/SafeERC20Namer.sol",
+        "../utils/token/MinimalTransferHelper.sol",
+        "../interfaces/yieldspace/IPool.sol",
+        "../interfaces/yieldspace/IPoolFactory.sol",
+        "../interfaces/vault/IFYToken.sol",
+        "./YieldMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "Pool",
+        "SafeCast128",
+        "SafeCast256"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/utils/access/Ownable.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "df011b503197ac463a97572996667291",
+      "sourceName": "contracts/utils/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/utils/token/SafeERC20Namer.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "aae775fd11b23cf2dc1487c648e7bf7e",
+      "sourceName": "contracts/utils/token/SafeERC20Namer.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../AddressStringUtil.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SafeERC20Namer"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/utils/token/MinimalTransferHelper.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "e5fc2fba80dedcf4d20c316bf965dd57",
+      "sourceName": "contracts/utils/token/MinimalTransferHelper.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/external/IERC20.sol",
+        "../RevertMsgExtractor.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "MinimalTransferHelper"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/yieldspace/YieldMath.sol": {
+      "lastModificationDate": 1759178521586,
+      "contentHash": "561494543a535c167897c4b003d5d9d1",
+      "sourceName": "contracts/yieldspace/YieldMath.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Math64x64.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "Exp64x64",
+        "YieldMath"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/utils/AddressStringUtil.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "374139b6b3dd0c02b6a8f11d1874bed1",
+      "sourceName": "contracts/utils/AddressStringUtil.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "AddressStringUtil"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/yieldspace/Math64x64.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "9b73675a2387b4e89831fe752845572e",
+      "sourceName": "contracts/yieldspace/Math64x64.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "Math64x64"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/oracles/uniswap/UniswapV3Oracle.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "35bc104c48bf4af3a73935355975c88a",
+      "sourceName": "contracts/oracles/uniswap/UniswapV3Oracle.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../utils/access/AccessControl.sol",
+        "../../interfaces/vault/IOracle.sol",
+        "../../math/CastBytes32Bytes6.sol",
+        "./IUniswapV3PoolImmutables.sol",
+        "../../mocks/oracles/uniswap/UniswapV3OracleLibraryMock.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UniswapV3Oracle"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/math/CastBytes32Bytes6.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "1517e7ed2f7ac6dd534029f6caece1fe",
+      "sourceName": "contracts/math/CastBytes32Bytes6.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CastBytes32Bytes6"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/oracles/uniswap/IUniswapV3PoolImmutables.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "e236e09a9d654fb2f20a6da5dba2bd2f",
+      "sourceName": "contracts/oracles/uniswap/IUniswapV3PoolImmutables.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolImmutables"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/oracles/uniswap/UniswapV3OracleLibraryMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "1e486498db6560f9b1f21edffafb3739",
+      "sourceName": "contracts/mocks/oracles/uniswap/UniswapV3OracleLibraryMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../math/WMul.sol",
+        "../../../math/WDiv.sol",
+        "./UniswapV3FactoryMock.sol",
+        "./UniswapV3PoolMock.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UniswapV3OracleLibraryMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/oracles/uniswap/UniswapV3FactoryMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "0139de6ef0be00906718b32b5041e832",
+      "sourceName": "contracts/mocks/oracles/uniswap/UniswapV3FactoryMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./UniswapV3PoolMock.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UniswapV3FactoryMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/oracles/uniswap/UniswapV3PoolMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "aacb2d069bff55f7d0b589cd8a760b49",
+      "sourceName": "contracts/mocks/oracles/uniswap/UniswapV3PoolMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ISourceMock.sol",
+        "../../../oracles/uniswap/IUniswapV3PoolImmutables.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UniswapV3PoolMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/oracles/ISourceMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "be5a2141a41a7c787eaf667a31cd9d19",
+      "sourceName": "contracts/mocks/oracles/ISourceMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ISourceMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/oracles/compound/CTokenRateMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "4310347239b29c39ad71d08b68bab211",
+      "sourceName": "contracts/mocks/oracles/compound/CTokenRateMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ISourceMock.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CTokenRateMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/oracles/compound/CTokenChiMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "3dc22818f939de077c0b92b09b7d745a",
+      "sourceName": "contracts/mocks/oracles/compound/CTokenChiMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ISourceMock.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CTokenChiMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/oracles/chainlink/ChainlinkAggregatorV3Mock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "9358918d64fe855a78487e0078017557",
+      "sourceName": "contracts/mocks/oracles/chainlink/ChainlinkAggregatorV3Mock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ISourceMock.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ChainlinkAggregatorV3Mock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/Join.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "20c2c833e47ba66d02271cf8ed96b820",
+      "sourceName": "contracts/Join.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "erc3156/contracts/interfaces/IERC3156FlashBorrower.sol",
+        "erc3156/contracts/interfaces/IERC3156FlashLender.sol",
+        "./interfaces/vault/IJoin.sol",
+        "./interfaces/vault/IJoinFactory.sol",
+        "./interfaces/external/IERC20.sol",
+        "./utils/access/AccessControl.sol",
+        "./utils/token/TransferHelper.sol",
+        "./math/WMul.sol",
+        "./math/CastU256U128.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Join"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/JoinFactory.sol": {
+      "lastModificationDate": 1759178521578,
+      "contentHash": "bc76a82c27294b05f9ae2dc40f3a10e4",
+      "sourceName": "contracts/JoinFactory.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/vault/IJoinFactory.sol",
+        "./Join.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "JoinFactory"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/TLMMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "b2051e89a41b1d705020dbdb16c92af0",
+      "sourceName": "contracts/mocks/TLMMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/external/IERC20.sol",
+        "./ERC20Mock.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "GemJoinMock",
+        "TLMMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/ERC20Mock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "a7a98906348e99567aec7d7f3d79883d",
+      "sourceName": "contracts/mocks/ERC20Mock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/token/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Mock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/USDCMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "241bd9934b17674e0d4db6ae7663aefa",
+      "sourceName": "contracts/mocks/USDCMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/token/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "USDCMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/RestrictedERC20Mock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "96877e3bd4fb7528062d799189f4663e",
+      "sourceName": "contracts/mocks/RestrictedERC20Mock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/token/ERC20Permit.sol",
+        "../utils/access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RestrictedERC20Mock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/WETH9Mock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "48946d50c2e0020529a2c71686ba7a66",
+      "sourceName": "contracts/mocks/WETH9Mock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/token/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WETH9Mock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/DAIMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "9cc63eb8d840cc740df89456db56dae8",
+      "sourceName": "contracts/mocks/DAIMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/token/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DAIMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/FlashBorrower.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "c9e074d97f2639ba8e5ffe08ca9c6cca",
+      "sourceName": "contracts/mocks/FlashBorrower.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/external/IERC20.sol",
+        "erc3156/contracts/interfaces/IERC3156FlashBorrower.sol",
+        "erc3156/contracts/interfaces/IERC3156FlashLender.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FlashBorrower"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/oracles/compound/CompoundMultiOracle.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "22911a96ebedfe5c7f7eb908d00c58ba",
+      "sourceName": "contracts/oracles/compound/CompoundMultiOracle.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../utils/access/AccessControl.sol",
+        "../../interfaces/vault/IOracle.sol",
+        "../../math/CastBytes32Bytes6.sol",
+        "./CTokenInterface.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CompoundMultiOracle"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/oracles/compound/CTokenInterface.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "a7783a226c5473988e52554c27d1762a",
+      "sourceName": "contracts/oracles/compound/CTokenInterface.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.16"
+      ],
+      "artifacts": [
+        "CTokenInterface"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/oracles/chainlink/ChainlinkMultiOracle.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "a621447023f3e4aca4ca4fe81f35496e",
+      "sourceName": "contracts/oracles/chainlink/ChainlinkMultiOracle.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../utils/access/AccessControl.sol",
+        "../../interfaces/vault/IOracle.sol",
+        "../../math/CastBytes32Bytes6.sol",
+        "./AggregatorV3Interface.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ChainlinkMultiOracle"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/oracles/chainlink/AggregatorV3Interface.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "b213894d1186ed5f03cceedb9a7811a2",
+      "sourceName": "contracts/oracles/chainlink/AggregatorV3Interface.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "AggregatorV3Interface"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/oracles/OracleMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "98cbf8f1b335fd6b305c0c46a72a15c0",
+      "sourceName": "contracts/mocks/oracles/OracleMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/vault/IOracle.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OracleMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/math/WMulUp.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "f0b3b174ddb2f13b4bb8a9ed7c1649d4",
+      "sourceName": "contracts/math/WMulUp.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WMulUp"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/12/contracts/mocks/oracles/uniswap/UniswapV2PairMock.sol": {
+      "lastModificationDate": 1759178521582,
+      "contentHash": "c5a2ae080c0e4056c292c6af0984db79",
+      "sourceName": "contracts/mocks/oracles/uniswap/UniswapV2PairMock.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UniswapV2PairMock"
+      ]
+    }
+  }
+}

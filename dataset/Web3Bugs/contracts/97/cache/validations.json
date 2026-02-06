@@ -1,0 +1,3845 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "IUniswapV2Router01": {
+        "src": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol:3",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "factory()",
+          "WETH()",
+          "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+          "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+          "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+          "swapExactETHForTokens(uint256,address[],address,uint256)",
+          "swapTokensForExactETH(uint256,uint256,address[],address,uint256)",
+          "swapExactTokensForETH(uint256,uint256,address[],address,uint256)",
+          "swapETHForExactTokens(uint256,address[],address,uint256)",
+          "quote(uint256,uint256,uint256)",
+          "getAmountOut(uint256,uint256,uint256)",
+          "getAmountIn(uint256,uint256,uint256)",
+          "getAmountsOut(uint256,address[])",
+          "getAmountsIn(uint256,address[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IUniswapV2Router02": {
+        "src": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol:5",
+        "inherit": [
+          "IUniswapV2Router01"
+        ],
+        "libraries": [],
+        "methods": [
+          "removeLiquidityETHSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+          "swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
+          "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "ERC1967Proxy": {
+        "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:14",
+        "version": {
+          "withMetadata": "8567d7e36efb43583b2102edcb7d82c0938632c4cf045e724ef10bacb4c9d871",
+          "withoutMetadata": "8567d7e36efb43583b2102edcb7d82c0938632c4cf045e724ef10bacb4c9d871",
+          "linkedWithoutMetadata": "8567d7e36efb43583b2102edcb7d82c0938632c4cf045e724ef10bacb4c9d871"
+        },
+        "inherit": [
+          "ERC1967Upgrade",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC1967Proxy",
+            "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:21"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1967Upgrade": {
+        "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:17",
+        "inherit": [],
+        "libraries": [
+          "StorageSlot",
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Proxy": {
+        "src": "@openzeppelin/contracts/proxy/Proxy.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IBeacon": {
+        "src": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "implementation()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "TransparentUpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:28",
+        "version": {
+          "withMetadata": "06cb8d35191b0b98e8b577557ec140dc9a7e87346e4bf6c7acaf7bf8851e39c6",
+          "withoutMetadata": "06cb8d35191b0b98e8b577557ec140dc9a7e87346e4bf6c7acaf7bf8851e39c6",
+          "linkedWithoutMetadata": "06cb8d35191b0b98e8b577557ec140dc9a7e87346e4bf6c7acaf7bf8851e39c6"
+        },
+        "inherit": [
+          "ERC1967Proxy",
+          "ERC1967Upgrade",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,bytes)",
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "TransparentUpgradeableProxy",
+            "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:33"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:8",
+        "version": {
+          "withMetadata": "ac45fc11aa1d9ae5ec969422baed25bf19b474a8c609fa9144ed047521b299c0",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "StorageSlot": {
+        "src": "@openzeppelin/contracts/utils/StorageSlot.sol:31",
+        "version": {
+          "withMetadata": "5d16ec2ddca326294dd8e12079e8260635e85eb4c7f6ede7b86fe69fa31fd32d",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "LiquidityPoolProxy": {
+        "src": "contracts/hyphen/proxy/LiquidityPoolProxy.sol:29",
+        "version": {
+          "withMetadata": "df177cfef6522983126312ec75d2d8aa1fbea7445dc23229bb3f683dc286e5fc",
+          "withoutMetadata": "df177cfef6522983126312ec75d2d8aa1fbea7445dc23229bb3f683dc286e5fc",
+          "linkedWithoutMetadata": "df177cfef6522983126312ec75d2d8aa1fbea7445dc23229bb3f683dc286e5fc"
+        },
+        "inherit": [
+          "TransparentUpgradeableProxy",
+          "ERC1967Proxy",
+          "ERC1967Upgrade",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address)",
+          "getAdmin()",
+          "getImplementation()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "LiquidityPoolProxy",
+            "src": "contracts/hyphen/proxy/LiquidityPoolProxy.sol:30"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "OwnableUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:20",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:21"
+            },
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:77"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC2771ContextUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/metatx/ERC2771ContextUpgradeable.sol:11",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "isTrustedForwarder(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC2771ContextUpgradeable",
+              "label": "_trustedForwarder",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/metatx/ERC2771ContextUpgradeable.sol:12"
+            },
+            {
+              "contract": "ERC2771ContextUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/metatx/ERC2771ContextUpgradeable.sol:45"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:17",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "PausableUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:17",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "paused()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:28"
+            },
+            {
+              "contract": "PausableUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:96"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ReentrancyGuardUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:22",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
+            },
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:35",
+        "version": {
+          "withMetadata": "2419ddfe049b9bdfd4d0cc3a84b52057aa7056c46fd2a9f759923f2415e9b58d",
+          "withoutMetadata": "8d9120205b5793398619aca58bbe03842de857d4126a35e2fb1f5f5cd86b19f3",
+          "linkedWithoutMetadata": "8d9120205b5793398619aca58bbe03842de857d4126a35e2fb1f5f5cd86b19f3"
+        },
+        "inherit": [
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:36"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_allowances",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:38"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:40"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:42"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)45_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:361"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20MetadataUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol:12",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol:17",
+        "version": {
+          "withMetadata": "56dac68ea153f8db9094706a61b3d4090558f5859e2b94f9b0cb7796133d0a7a",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC721Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:19",
+        "version": {
+          "withMetadata": "c9920f030f503f3b480f27f8bbad384110c7908ba3c8ca2904fe6d5f01239468",
+          "withoutMetadata": "0b5f6bfd3323412968af7612f477c7a8e351847d25f14aa96c24c3361a25ab24",
+          "linkedWithoutMetadata": "0b5f6bfd3323412968af7612f477c7a8e351847d25f14aa96c24c3361a25ab24"
+        },
+        "inherit": [
+          "IERC721MetadataUpgradeable",
+          "IERC721Upgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "AddressUpgradeable",
+          "StringsUpgradeable"
+        ],
+        "methods": [
+          "supportsInterface(bytes4)",
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "name()",
+          "symbol()",
+          "tokenURI(uint256)",
+          "approve(address,uint256)",
+          "getApproved(uint256)",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "transferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:24"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:27"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_owners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:30"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:33"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_tokenApprovals",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:36"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:39"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)44_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:418"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_mapping(t_uint256,t_address)": {
+              "label": "mapping(uint256 => address)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+              "label": "mapping(address => mapping(address => bool))"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)44_storage": {
+              "label": "uint256[44]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721ReceiverUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "onERC721Received(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol:10",
+        "inherit": [
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "safeTransferFrom(address,address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "approve(address,uint256)",
+          "getApproved(uint256)",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "safeTransferFrom(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC721EnumerableUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:14",
+        "inherit": [
+          "IERC721EnumerableUpgradeable",
+          "ERC721Upgradeable",
+          "IERC721MetadataUpgradeable",
+          "IERC721Upgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)",
+          "tokenOfOwnerByIndex(address,uint256)",
+          "totalSupply()",
+          "tokenByIndex(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC721EnumerableUpgradeable",
+              "label": "_ownedTokens",
+              "type": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:24"
+            },
+            {
+              "contract": "ERC721EnumerableUpgradeable",
+              "label": "_ownedTokensIndex",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:27"
+            },
+            {
+              "contract": "ERC721EnumerableUpgradeable",
+              "label": "_allTokens",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:30"
+            },
+            {
+              "contract": "ERC721EnumerableUpgradeable",
+              "label": "_allTokensIndex",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:33"
+            },
+            {
+              "contract": "ERC721EnumerableUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)46_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:171"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+              "label": "mapping(address => mapping(uint256 => uint256))"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_uint256,t_uint256)": {
+              "label": "mapping(uint256 => uint256)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_array(t_uint256)46_storage": {
+              "label": "uint256[46]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC721URIStorageUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol:11",
+        "inherit": [
+          "ERC721Upgradeable",
+          "IERC721MetadataUpgradeable",
+          "IERC721Upgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "StringsUpgradeable"
+        ],
+        "methods": [
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC721URIStorageUpgradeable",
+              "label": "_tokenURIs",
+              "type": "t_mapping(t_uint256,t_string_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol:23"
+            },
+            {
+              "contract": "ERC721URIStorageUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol:75"
+            }
+          ],
+          "types": {
+            "t_mapping(t_uint256,t_string_storage)": {
+              "label": "mapping(uint256 => string)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721EnumerableUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/IERC721EnumerableUpgradeable.sol:11",
+        "inherit": [
+          "IERC721Upgradeable",
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "tokenOfOwnerByIndex(address,uint256)",
+          "tokenByIndex(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721MetadataUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/IERC721MetadataUpgradeable.sol:11",
+        "inherit": [
+          "IERC721Upgradeable",
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:8",
+        "version": {
+          "withMetadata": "d9920022c4cd2a3180ca9606509a05479308033016c09ca57651f5c2ed833b5c",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ContextUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:16",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ContextUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:30"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "StringsUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol:8",
+        "version": {
+          "withMetadata": "3d1fa56e7d17893a7ecb1349b2c5489880644649c77347407cf7697fb87898bb",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC165Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:22",
+        "inherit": [
+          "IERC165Upgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC165Upgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:35"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC165Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol:14",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:19",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:27"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:20"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Pausable": {
+        "src": "@openzeppelin/contracts/security/Pausable.sol:16",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "paused()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Pausable",
+            "src": "@openzeppelin/contracts/security/Pausable.sol:32"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Pausable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/security/Pausable.sol:27"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:8",
+        "version": {
+          "withMetadata": "7cc0f02ceb7c7e78056e8324ab722ac98d7977eade473143a01b01470bec42df",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Base64": {
+        "src": "base64-sol/base64.sol:8",
+        "version": {
+          "withMetadata": "97b670f4732698dca254031e5c77d9a9e0a88140f90f1be3e418a1d76ab195a3",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "892fe8cedab8b23b53a7317be898f57590f6a6e8ac867decf525f2d15dcaf3d0",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "OwnableUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:20",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:21"
+            },
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:77"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC2771ContextUpgradeable": {
+        "src": "contracts/hyphen/metatx/ERC2771ContextUpgradeable.sol:13",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "isTrustedForwarder(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC2771ContextUpgradeable",
+              "label": "_trustedForwarder",
+              "type": "t_address",
+              "src": "contracts/hyphen/metatx/ERC2771ContextUpgradeable.sol:14"
+            },
+            {
+              "contract": "ERC2771ContextUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "contracts/hyphen/metatx/ERC2771ContextUpgradeable.sol:47"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:17",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "PausableUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:17",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "paused()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:28"
+            },
+            {
+              "contract": "PausableUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:96"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ReentrancyGuardUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:22",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
+            },
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:35",
+        "version": {
+          "withMetadata": "2469b2a282784ec1e51303f01e9f69a6a6b23ea9af8d19c85143f31936586ffd",
+          "withoutMetadata": "05982cfa77d3ded9372d412b844973999856486a09fb5ca0e4f77d11a8ed23ec",
+          "linkedWithoutMetadata": "05982cfa77d3ded9372d412b844973999856486a09fb5ca0e4f77d11a8ed23ec"
+        },
+        "inherit": [
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:36"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_allowances",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:38"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:40"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:42"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)45_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:361"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20MetadataUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol:12",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol:17",
+        "version": {
+          "withMetadata": "007aa6735ece60054e072321a1464ba87937a59a3bc2c4fb32a7c304ab5f8087",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC721Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:19",
+        "version": {
+          "withMetadata": "16a544ccfb6f200243a873fd2c417c30f7d9128d4c3d740efb8d7a4f896ddd20",
+          "withoutMetadata": "d2d82862a21607fc4d73cd4e2938aeae2e55b7c22dbf30c30474727f9f49dca4",
+          "linkedWithoutMetadata": "d2d82862a21607fc4d73cd4e2938aeae2e55b7c22dbf30c30474727f9f49dca4"
+        },
+        "inherit": [
+          "IERC721MetadataUpgradeable",
+          "IERC721Upgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "AddressUpgradeable",
+          "StringsUpgradeable"
+        ],
+        "methods": [
+          "supportsInterface(bytes4)",
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "name()",
+          "symbol()",
+          "tokenURI(uint256)",
+          "approve(address,uint256)",
+          "getApproved(uint256)",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "transferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:24"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:27"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_owners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:30"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:33"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_tokenApprovals",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:36"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:39"
+            },
+            {
+              "contract": "ERC721Upgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)44_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol:418"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_mapping(t_uint256,t_address)": {
+              "label": "mapping(uint256 => address)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+              "label": "mapping(address => mapping(address => bool))"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)44_storage": {
+              "label": "uint256[44]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721ReceiverUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "onERC721Received(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol:10",
+        "inherit": [
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "safeTransferFrom(address,address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "approve(address,uint256)",
+          "getApproved(uint256)",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "safeTransferFrom(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC721EnumerableUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:14",
+        "inherit": [
+          "IERC721EnumerableUpgradeable",
+          "ERC721Upgradeable",
+          "IERC721MetadataUpgradeable",
+          "IERC721Upgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)",
+          "tokenOfOwnerByIndex(address,uint256)",
+          "totalSupply()",
+          "tokenByIndex(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC721EnumerableUpgradeable",
+              "label": "_ownedTokens",
+              "type": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:24"
+            },
+            {
+              "contract": "ERC721EnumerableUpgradeable",
+              "label": "_ownedTokensIndex",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:27"
+            },
+            {
+              "contract": "ERC721EnumerableUpgradeable",
+              "label": "_allTokens",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:30"
+            },
+            {
+              "contract": "ERC721EnumerableUpgradeable",
+              "label": "_allTokensIndex",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:33"
+            },
+            {
+              "contract": "ERC721EnumerableUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)46_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol:171"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+              "label": "mapping(address => mapping(uint256 => uint256))"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_uint256,t_uint256)": {
+              "label": "mapping(uint256 => uint256)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_array(t_uint256)46_storage": {
+              "label": "uint256[46]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC721URIStorageUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol:11",
+        "inherit": [
+          "ERC721Upgradeable",
+          "IERC721MetadataUpgradeable",
+          "IERC721Upgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "StringsUpgradeable"
+        ],
+        "methods": [
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC721URIStorageUpgradeable",
+              "label": "_tokenURIs",
+              "type": "t_mapping(t_uint256,t_string_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol:23"
+            },
+            {
+              "contract": "ERC721URIStorageUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol:75"
+            }
+          ],
+          "types": {
+            "t_mapping(t_uint256,t_string_storage)": {
+              "label": "mapping(uint256 => string)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721EnumerableUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/IERC721EnumerableUpgradeable.sol:11",
+        "inherit": [
+          "IERC721Upgradeable",
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "tokenOfOwnerByIndex(address,uint256)",
+          "tokenByIndex(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721MetadataUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/IERC721MetadataUpgradeable.sol:11",
+        "inherit": [
+          "IERC721Upgradeable",
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:8",
+        "version": {
+          "withMetadata": "2ccf18f22f25ee1581a2eec52830c9186e3962f8a11449f7bafa5dbaee5d5094",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ContextUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:16",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ContextUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:30"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "StringsUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol:8",
+        "version": {
+          "withMetadata": "a2e75665016c73f208779b4ef4f1514dbe82cbe06874350c10bf9c3683592e98",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC165Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:22",
+        "inherit": [
+          "IERC165Upgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC165Upgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:35"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC165Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol:14",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:19",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:27"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:20"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Pausable": {
+        "src": "contracts/security/Pausable.sol:17",
+        "inherit": [
+          "PausableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "isPauser(address)",
+          "changePauser(address)",
+          "renouncePauser()",
+          "pause()",
+          "unpause()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Pausable",
+              "label": "_pauser",
+              "type": "t_address",
+              "src": "contracts/security/Pausable.sol:18"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:8",
+        "version": {
+          "withMetadata": "71875c434b956c8ae2958f3099e3ded5cc0e4064094b91d98b87eba03a3a4308",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Base64": {
+        "src": "base64-sol/base64.sol:8",
+        "version": {
+          "withMetadata": "39fa93a5f0d2794fca725809efc2cbc13917dc98ea82a0ca47f38d45415c2cd0",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ExecutorManager": {
+        "src": "contracts/hyphen/ExecutorManager.sol:8",
+        "version": {
+          "withMetadata": "5db8e3cbfe93e0df8b69bf72141826312a928d8725976df9e61c37f0259db1ac",
+          "withoutMetadata": "20456182390cb5d3204227e8c6bf82e61f32d4b91649e13a54ea05226dbaaf37",
+          "linkedWithoutMetadata": "20456182390cb5d3204227e8c6bf82e61f32d4b91649e13a54ea05226dbaaf37"
+        },
+        "inherit": [
+          "Ownable",
+          "Context",
+          "IExecutorManager"
+        ],
+        "libraries": [],
+        "methods": [
+          "getExecutorStatus(address)",
+          "getAllExecutors()",
+          "addExecutors(address[])",
+          "addExecutor(address)",
+          "removeExecutors(address[])",
+          "removeExecutor(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ExecutorManager",
+              "label": "executors",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/hyphen/ExecutorManager.sol:9"
+            },
+            {
+              "contract": "ExecutorManager",
+              "label": "executorStatus",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/hyphen/ExecutorManager.sol:10"
+            }
+          ],
+          "types": {
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "HyphenLiquidityFarming": {
+        "src": "contracts/hyphen/LiquidityFarming.sol:16",
+        "version": {
+          "withMetadata": "fb12f5a2ef80b0535b7b8dc1a7d16f3d2f7ad92b04b670a0dfb9284c84fb8f9f",
+          "withoutMetadata": "31486a66b8b2d8ff6b2dd4ade897a1d8cb53965614c18c443d0e045544c3c176",
+          "linkedWithoutMetadata": "31486a66b8b2d8ff6b2dd4ade897a1d8cb53965614c18c443d0e045544c3c176"
+        },
+        "inherit": [
+          "IERC721ReceiverUpgradeable",
+          "ReentrancyGuardUpgradeable",
+          "Pausable",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ERC2771ContextUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeERC20Upgradeable"
+        ],
+        "methods": [
+          "initialize(address,address,address,address)",
+          "initalizeRewardPool(address,address,uint256)",
+          "setRewardPerSecond(address,uint256)",
+          "reclaimTokens(address,uint256,address payable)",
+          "deposit(uint256,address payable)",
+          "withdraw(uint256,address payable)",
+          "extractRewards(uint256,address payable)",
+          "getUpdatedAccTokenPerShare(address)",
+          "pendingToken(uint256)",
+          "updatePool(address)",
+          "getNftIdsStaked(address)",
+          "getRewardRatePerSecond(address)",
+          "onERC721Received(address,address,uint256,bytes)",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "HyphenLiquidityFarming",
+              "label": "lpToken",
+              "type": "t_contract(ILPToken)9365",
+              "src": "contracts/hyphen/LiquidityFarming.sol:26"
+            },
+            {
+              "contract": "HyphenLiquidityFarming",
+              "label": "liquidityProviders",
+              "type": "t_contract(ILiquidityProviders)9796",
+              "src": "contracts/hyphen/LiquidityFarming.sol:27"
+            },
+            {
+              "contract": "HyphenLiquidityFarming",
+              "label": "poolInfo",
+              "type": "t_mapping(t_address,t_struct(PoolInfo)4238_storage)",
+              "src": "contracts/hyphen/LiquidityFarming.sol:47"
+            },
+            {
+              "contract": "HyphenLiquidityFarming",
+              "label": "nftInfo",
+              "type": "t_mapping(t_uint256,t_struct(NFTInfo)4233_storage)",
+              "src": "contracts/hyphen/LiquidityFarming.sol:50"
+            },
+            {
+              "contract": "HyphenLiquidityFarming",
+              "label": "rewardTokens",
+              "type": "t_mapping(t_address,t_address)",
+              "src": "contracts/hyphen/LiquidityFarming.sol:56"
+            },
+            {
+              "contract": "HyphenLiquidityFarming",
+              "label": "nftIdsStaked",
+              "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+              "src": "contracts/hyphen/LiquidityFarming.sol:59"
+            },
+            {
+              "contract": "HyphenLiquidityFarming",
+              "label": "totalSharesStaked",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/LiquidityFarming.sol:62"
+            },
+            {
+              "contract": "HyphenLiquidityFarming",
+              "label": "rewardRateLog",
+              "type": "t_mapping(t_address,t_array(t_struct(RewardsPerSecondEntry)4243_storage)dyn_storage)",
+              "src": "contracts/hyphen/LiquidityFarming.sol:65"
+            }
+          ],
+          "types": {
+            "t_contract(ILPToken)9365": {
+              "label": "contract ILPToken"
+            },
+            "t_contract(ILiquidityProviders)9796": {
+              "label": "contract ILiquidityProviders"
+            },
+            "t_mapping(t_address,t_struct(PoolInfo)4238_storage)": {
+              "label": "mapping(address => struct HyphenLiquidityFarming.PoolInfo)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_struct(PoolInfo)4238_storage": {
+              "label": "struct HyphenLiquidityFarming.PoolInfo",
+              "members": [
+                {
+                  "label": "accTokenPerShare",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "lastRewardTime",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(NFTInfo)4233_storage)": {
+              "label": "mapping(uint256 => struct HyphenLiquidityFarming.NFTInfo)"
+            },
+            "t_struct(NFTInfo)4233_storage": {
+              "label": "struct HyphenLiquidityFarming.NFTInfo",
+              "members": [
+                {
+                  "label": "staker",
+                  "type": "t_address_payable"
+                },
+                {
+                  "label": "rewardDebt",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "unpaidRewards",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "isStaked",
+                  "type": "t_bool"
+                }
+              ]
+            },
+            "t_address_payable": {
+              "label": "address payable"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_mapping(t_address,t_array(t_struct(RewardsPerSecondEntry)4243_storage)dyn_storage)": {
+              "label": "mapping(address => struct HyphenLiquidityFarming.RewardsPerSecondEntry[])"
+            },
+            "t_array(t_struct(RewardsPerSecondEntry)4243_storage)dyn_storage": {
+              "label": "struct HyphenLiquidityFarming.RewardsPerSecondEntry[]"
+            },
+            "t_struct(RewardsPerSecondEntry)4243_storage": {
+              "label": "struct HyphenLiquidityFarming.RewardsPerSecondEntry",
+              "members": [
+                {
+                  "label": "rewardsPerSecond",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "timestamp",
+                  "type": "t_uint256"
+                }
+              ]
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "LiquidityPool": {
+        "src": "contracts/hyphen/LiquidityPool.sol:18",
+        "version": {
+          "withMetadata": "18ea0b9a14981fca7c1c4ed5ead9ec861d2c95f6a4da20c82c68be5a70b0d477",
+          "withoutMetadata": "5a1f911b7046e9738b5dbf193a5400578eca8cbbd5b4da1f7230046106f635c0",
+          "linkedWithoutMetadata": "5a1f911b7046e9738b5dbf193a5400578eca8cbbd5b4da1f7230046106f635c0"
+        },
+        "inherit": [
+          "ERC2771ContextUpgradeable",
+          "OwnableUpgradeable",
+          "Pausable",
+          "PausableUpgradeable",
+          "ContextUpgradeable",
+          "ReentrancyGuardUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeERC20Upgradeable"
+        ],
+        "methods": [
+          "initialize(address,address,address,address,address)",
+          "setTrustedForwarder(address)",
+          "setLiquidityProviders(address)",
+          "setBaseGas(uint128)",
+          "getExecutorManager()",
+          "setExecutorManager(address)",
+          "getCurrentLiquidity(address)",
+          "depositErc20(uint256,address,address,uint256,string)",
+          "getRewardAmount(uint256,address)",
+          "permitAndDepositErc20(address,address,uint256,uint256,(uint256,uint256,bool,uint8,bytes32,bytes32),string)",
+          "permitEIP2612AndDepositErc20(address,address,uint256,uint256,(uint256,uint256,bool,uint8,bytes32,bytes32),string)",
+          "depositNative(address,uint256,string)",
+          "sendFundsToUser(address,uint256,address payable,bytes,uint256,uint256)",
+          "getTransferFee(address,uint256)",
+          "checkHashStatus(address,uint256,address payable,bytes)",
+          "withdrawErc20GasFee(address)",
+          "withdrawNativeGasFee()",
+          "transfer(address,address,uint256)",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "LiquidityPool",
+              "label": "baseGas",
+              "type": "t_uint256",
+              "src": "contracts/hyphen/LiquidityPool.sol:22"
+            },
+            {
+              "contract": "LiquidityPool",
+              "label": "executorManager",
+              "type": "t_contract(IExecutorManager)9148",
+              "src": "contracts/hyphen/LiquidityPool.sol:24"
+            },
+            {
+              "contract": "LiquidityPool",
+              "label": "tokenManager",
+              "type": "t_contract(ITokenManager)9925",
+              "src": "contracts/hyphen/LiquidityPool.sol:25"
+            },
+            {
+              "contract": "LiquidityPool",
+              "label": "liquidityProviders",
+              "type": "t_contract(ILiquidityProviders)9796",
+              "src": "contracts/hyphen/LiquidityPool.sol:26"
+            },
+            {
+              "contract": "LiquidityPool",
+              "label": "processedHash",
+              "type": "t_mapping(t_bytes32,t_bool)",
+              "src": "contracts/hyphen/LiquidityPool.sol:37"
+            },
+            {
+              "contract": "LiquidityPool",
+              "label": "gasFeeAccumulatedByToken",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/LiquidityPool.sol:38"
+            },
+            {
+              "contract": "LiquidityPool",
+              "label": "gasFeeAccumulated",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "contracts/hyphen/LiquidityPool.sol:41"
+            },
+            {
+              "contract": "LiquidityPool",
+              "label": "incentivePool",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/LiquidityPool.sol:44"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_contract(IExecutorManager)9148": {
+              "label": "contract IExecutorManager"
+            },
+            "t_contract(ITokenManager)9925": {
+              "label": "contract ITokenManager"
+            },
+            "t_contract(ILiquidityProviders)9796": {
+              "label": "contract ILiquidityProviders"
+            },
+            "t_mapping(t_bytes32,t_bool)": {
+              "label": "mapping(bytes32 => bool)"
+            },
+            "t_bytes32": {
+              "label": "bytes32"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "LiquidityProviders": {
+        "src": "contracts/hyphen/LiquidityProviders.sol:17",
+        "version": {
+          "withMetadata": "f88cbd5a099fc9e0be9e33aa6f29bc877c021e2da27193a4d9acd53538eb4a9d",
+          "withoutMetadata": "95d79a278df7082045084c19a4125bd01386af98c629a70517473d6a0da478c7",
+          "linkedWithoutMetadata": "95d79a278df7082045084c19a4125bd01386af98c629a70517473d6a0da478c7"
+        },
+        "inherit": [
+          "Pausable",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ERC2771ContextUpgradeable",
+          "ContextUpgradeable",
+          "ReentrancyGuardUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeERC20Upgradeable"
+        ],
+        "methods": [
+          "initialize(address,address,address,address)",
+          "getTotalReserveByToken(address)",
+          "getSuppliedLiquidityByToken(address)",
+          "getTotalLPFeeByToken(address)",
+          "getCurrentLiquidity(address)",
+          "setLpToken(address)",
+          "increaseCurrentLiquidity(address,uint256)",
+          "decreaseCurrentLiquidity(address,uint256)",
+          "setTokenManager(address)",
+          "setWhiteListPeriodManager(address)",
+          "setLiquidityPool(address)",
+          "getTokenPriceInLPShares(address)",
+          "sharesToTokenAmount(uint256,address)",
+          "getFeeAccumulatedOnNft(uint256)",
+          "addLPFee(address,uint256)",
+          "addNativeLiquidity()",
+          "addTokenLiquidity(address,uint256)",
+          "increaseTokenLiquidity(uint256,uint256)",
+          "increaseNativeLiquidity(uint256)",
+          "removeLiquidity(uint256,uint256)",
+          "claimFee(uint256)",
+          "getSuppliedLiquidity(uint256)",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "LiquidityProviders",
+              "label": "lpToken",
+              "type": "t_contract(ILPToken)9365",
+              "src": "contracts/hyphen/LiquidityProviders.sol:29"
+            },
+            {
+              "contract": "LiquidityProviders",
+              "label": "liquidityPool",
+              "type": "t_contract(ILiquidityPool)9595",
+              "src": "contracts/hyphen/LiquidityProviders.sol:30"
+            },
+            {
+              "contract": "LiquidityProviders",
+              "label": "tokenManager",
+              "type": "t_contract(ITokenManager)9925",
+              "src": "contracts/hyphen/LiquidityProviders.sol:31"
+            },
+            {
+              "contract": "LiquidityProviders",
+              "label": "whiteListPeriodManager",
+              "type": "t_contract(IWhiteListPeriodManager)10083",
+              "src": "contracts/hyphen/LiquidityProviders.sol:32"
+            },
+            {
+              "contract": "LiquidityProviders",
+              "label": "totalReserve",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/LiquidityProviders.sol:42"
+            },
+            {
+              "contract": "LiquidityProviders",
+              "label": "totalLiquidity",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/LiquidityProviders.sol:43"
+            },
+            {
+              "contract": "LiquidityProviders",
+              "label": "currentLiquidity",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/LiquidityProviders.sol:44"
+            },
+            {
+              "contract": "LiquidityProviders",
+              "label": "totalLPFees",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/LiquidityProviders.sol:45"
+            },
+            {
+              "contract": "LiquidityProviders",
+              "label": "totalSharesMinted",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/LiquidityProviders.sol:46"
+            }
+          ],
+          "types": {
+            "t_contract(ILPToken)9365": {
+              "label": "contract ILPToken"
+            },
+            "t_contract(ILiquidityPool)9595": {
+              "label": "contract ILiquidityPool"
+            },
+            "t_contract(ITokenManager)9925": {
+              "label": "contract ITokenManager"
+            },
+            "t_contract(IWhiteListPeriodManager)10083": {
+              "label": "contract IWhiteListPeriodManager"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "WhitelistPeriodManager": {
+        "src": "contracts/hyphen/WhitelistPeriodManager.sol:15",
+        "version": {
+          "withMetadata": "2b82a05807cd98a82ca72298868ffa61dc8e96655ecb50873349460ca271b747",
+          "withoutMetadata": "09a0cfc0e6a1f8fbf84b2bf844182d79a2601f716e30ee59f2a66a718c54737f",
+          "linkedWithoutMetadata": "09a0cfc0e6a1f8fbf84b2bf844182d79a2601f716e30ee59f2a66a718c54737f"
+        },
+        "inherit": [
+          "ERC2771ContextUpgradeable",
+          "Pausable",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(address,address,address,address,address)",
+          "beforeLiquidityAddition(address,address,uint256)",
+          "beforeLiquidityRemoval(address,address,uint256)",
+          "beforeLiquidityTransfer(address,address,address,uint256)",
+          "setTokenManager(address)",
+          "setLiquidityProviders(address)",
+          "setLpToken(address)",
+          "setIsExcludedAddressStatus(address[],bool[])",
+          "setTotalCap(address,uint256)",
+          "setPerTokenWalletCap(address,uint256)",
+          "setCap(address,uint256,uint256)",
+          "setCaps(address[],uint256[],uint256[])",
+          "setAreWhiteListRestrictionsEnabled(bool)",
+          "getMaxCommunityLpPositon(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "WhitelistPeriodManager",
+              "label": "liquidityProviders",
+              "type": "t_contract(ILiquidityProviders)9796",
+              "src": "contracts/hyphen/WhitelistPeriodManager.sol:16"
+            },
+            {
+              "contract": "WhitelistPeriodManager",
+              "label": "tokenManager",
+              "type": "t_contract(ITokenManager)9925",
+              "src": "contracts/hyphen/WhitelistPeriodManager.sol:17"
+            },
+            {
+              "contract": "WhitelistPeriodManager",
+              "label": "lpToken",
+              "type": "t_contract(ILPToken)9365",
+              "src": "contracts/hyphen/WhitelistPeriodManager.sol:18"
+            },
+            {
+              "contract": "WhitelistPeriodManager",
+              "label": "areWhiteListRestrictionsEnabled",
+              "type": "t_bool",
+              "src": "contracts/hyphen/WhitelistPeriodManager.sol:19"
+            },
+            {
+              "contract": "WhitelistPeriodManager",
+              "label": "isExcludedAddress",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/hyphen/WhitelistPeriodManager.sol:23"
+            },
+            {
+              "contract": "WhitelistPeriodManager",
+              "label": "totalLiquidity",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/WhitelistPeriodManager.sol:25"
+            },
+            {
+              "contract": "WhitelistPeriodManager",
+              "label": "totalLiquidityByLp",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "contracts/hyphen/WhitelistPeriodManager.sol:27"
+            },
+            {
+              "contract": "WhitelistPeriodManager",
+              "label": "perTokenTotalCap",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/WhitelistPeriodManager.sol:31"
+            },
+            {
+              "contract": "WhitelistPeriodManager",
+              "label": "perTokenWalletCap",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/hyphen/WhitelistPeriodManager.sol:33"
+            }
+          ],
+          "types": {
+            "t_contract(ILiquidityProviders)9796": {
+              "label": "contract ILiquidityProviders"
+            },
+            "t_contract(ITokenManager)9925": {
+              "label": "contract ITokenManager"
+            },
+            "t_contract(ILPToken)9365": {
+              "label": "contract ILPToken"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IExecutorManager": {
+        "src": "contracts/hyphen/interfaces/IExecutorManager.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getExecutorStatus(address)",
+          "getAllExecutors()",
+          "addExecutors(address[])",
+          "addExecutor(address)",
+          "removeExecutors(address[])",
+          "removeExecutor(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ILPToken": {
+        "src": "contracts/hyphen/interfaces/ILPToken.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "approve(address,uint256)",
+          "balanceOf(address)",
+          "exists(uint256)",
+          "getAllNftIdsByUser(address)",
+          "getApproved(uint256)",
+          "initialize(string,string,address)",
+          "isApprovedForAll(address,address)",
+          "isTrustedForwarder(address)",
+          "liquidityPoolAddress()",
+          "mint(address)",
+          "name()",
+          "owner()",
+          "ownerOf(uint256)",
+          "paused()",
+          "renounceOwnership()",
+          "safeTransferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256,bytes)",
+          "setApprovalForAll(address,bool)",
+          "setLiquidityPool(address)",
+          "setWhiteListPeriodManager(address)",
+          "supportsInterface(bytes4)",
+          "symbol()",
+          "tokenByIndex(uint256)",
+          "tokenMetadata(uint256)",
+          "tokenOfOwnerByIndex(address,uint256)",
+          "tokenURI(uint256)",
+          "totalSupply()",
+          "transferFrom(address,address,uint256)",
+          "transferOwnership(address)",
+          "updateTokenMetadata(uint256,(address,uint256,uint256))",
+          "whiteListPeriodManager()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ILiquidityPool": {
+        "src": "contracts/hyphen/interfaces/ILiquidityPool.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "baseGas()",
+          "changePauser(address)",
+          "checkHashStatus(address,uint256,address,bytes)",
+          "depositConfig(uint256,address)",
+          "depositErc20(uint256,address,address,uint256,string)",
+          "depositNative(address,uint256,string)",
+          "gasFeeAccumulated(address,address)",
+          "gasFeeAccumulatedByToken(address)",
+          "getCurrentLiquidity(address)",
+          "getExecutorManager()",
+          "getRewardAmount(uint256,address)",
+          "getTransferFee(address,uint256)",
+          "incentivePool(address)",
+          "initialize(address,address,address,address,address)",
+          "isPauser(address)",
+          "isTrustedForwarder(address)",
+          "owner()",
+          "paused()",
+          "processedHash(bytes32)",
+          "renounceOwnership()",
+          "renouncePauser()",
+          "transfer(address,address,uint256)",
+          "sendFundsToUser(address,uint256,address,bytes,uint256,uint256)",
+          "setBaseGas(uint128)",
+          "setExecutorManager(address)",
+          "setLiquidityProviders(address)",
+          "setTrustedForwarder(address)",
+          "transferConfig(address)",
+          "transferOwnership(address)",
+          "withdrawErc20GasFee(address)",
+          "withdrawNativeGasFee()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ILiquidityProviders": {
+        "src": "contracts/hyphen/interfaces/ILiquidityProviders.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "BASE_DIVISOR()",
+          "initialize(address,address)",
+          "addLPFee(address,uint256)",
+          "addNativeLiquidity()",
+          "addTokenLiquidity(address,uint256)",
+          "claimFee(uint256)",
+          "getFeeAccumulatedOnNft(uint256)",
+          "getSuppliedLiquidityByToken(address)",
+          "getTokenPriceInLPShares(address)",
+          "getTotalLPFeeByToken(address)",
+          "getTotalReserveByToken(address)",
+          "getSuppliedLiquidity(uint256)",
+          "increaseNativeLiquidity(uint256)",
+          "increaseTokenLiquidity(uint256,uint256)",
+          "isTrustedForwarder(address)",
+          "owner()",
+          "paused()",
+          "removeLiquidity(uint256,uint256)",
+          "renounceOwnership()",
+          "setLiquidityPool(address)",
+          "setLpToken(address)",
+          "setWhiteListPeriodManager(address)",
+          "sharesToTokenAmount(uint256,address)",
+          "totalLPFees(address)",
+          "totalLiquidity(address)",
+          "totalReserve(address)",
+          "totalSharesMinted(address)",
+          "transferOwnership(address)",
+          "whiteListPeriodManager()",
+          "increaseCurrentLiquidity(address,uint256)",
+          "decreaseCurrentLiquidity(address,uint256)",
+          "getCurrentLiquidity(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ISvgHelper": {
+        "src": "contracts/hyphen/interfaces/ISvgHelper.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "backgroundUrl()",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getAttributes(uint256,uint256)",
+          "getDescription(uint256,uint256)",
+          "getChainName()",
+          "owner()",
+          "renounceOwnership()",
+          "setBackgroundPngUrl(string)",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ITokenManager": {
+        "src": "contracts/hyphen/interfaces/ITokenManager.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getEquilibriumFee(address)",
+          "getMaxFee(address)",
+          "changeFee(address,uint256,uint256)",
+          "getTokensInfo(address)",
+          "getDepositConfig(uint256,address)",
+          "getTransferConfig(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IWhiteListPeriodManager": {
+        "src": "contracts/hyphen/interfaces/IWhiteListPeriodManager.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "areWhiteListRestrictionsEnabled()",
+          "beforeLiquidityAddition(address,address,uint256)",
+          "beforeLiquidityRemoval(address,address,uint256)",
+          "beforeLiquidityTransfer(address,address,address,uint256)",
+          "getMaxCommunityLpPositon(address)",
+          "initialize(address,address,address)",
+          "isExcludedAddress(address)",
+          "isTrustedForwarder(address)",
+          "owner()",
+          "paused()",
+          "perTokenTotalCap(address)",
+          "perTokenWalletCap(address)",
+          "renounceOwnership()",
+          "setAreWhiteListRestrictionsEnabled(bool)",
+          "setCap(address,uint256,uint256)",
+          "setCaps(address[],uint256[],uint256[])",
+          "setIsExcludedAddressStatus(address[],bool[])",
+          "setLiquidityProviders(address)",
+          "setPerTokenWalletCap(address,uint256)",
+          "setTokenManager(address)",
+          "setTotalCap(address,uint256)",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC2771Context": {
+        "src": "contracts/hyphen/metatx/ERC2771Context.sol:10",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "isTrustedForwarder(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC2771Context",
+            "src": "contracts/hyphen/metatx/ERC2771Context.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC2771Context",
+              "label": "_trustedForwarder",
+              "type": "t_address",
+              "src": "contracts/hyphen/metatx/ERC2771Context.sol:11"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "LPToken": {
+        "src": "contracts/hyphen/token/LPToken.sol:17",
+        "version": {
+          "withMetadata": "890234e45562052766508732b2cb35f65fd1c41dc3edb720032cdf72bf88082b",
+          "withoutMetadata": "9b61db66956db30e4efb7d19c2911894ad1047754d1de3e6b7b83537e74cae45",
+          "linkedWithoutMetadata": "9b61db66956db30e4efb7d19c2911894ad1047754d1de3e6b7b83537e74cae45"
+        },
+        "inherit": [
+          "Pausable",
+          "PausableUpgradeable",
+          "ERC2771ContextUpgradeable",
+          "ERC721URIStorageUpgradeable",
+          "ERC721EnumerableUpgradeable",
+          "IERC721EnumerableUpgradeable",
+          "ERC721Upgradeable",
+          "IERC721MetadataUpgradeable",
+          "IERC721Upgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ReentrancyGuardUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "Base64"
+        ],
+        "methods": [
+          "initialize(string,string,address,address)",
+          "setSvgHelper(address,address)",
+          "setLiquidityProviders(address)",
+          "setWhiteListPeriodManager(address)",
+          "getAllNftIdsByUser(address)",
+          "mint(address)",
+          "updateTokenMetadata(uint256,(address,uint256,uint256))",
+          "exists(uint256)",
+          "supportsInterface(bytes4)",
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "LPToken",
+              "label": "liquidityProvidersAddress",
+              "type": "t_address",
+              "src": "contracts/hyphen/token/LPToken.sol:27"
+            },
+            {
+              "contract": "LPToken",
+              "label": "whiteListPeriodManager",
+              "type": "t_contract(IWhiteListPeriodManager)10083",
+              "src": "contracts/hyphen/token/LPToken.sol:28"
+            },
+            {
+              "contract": "LPToken",
+              "label": "tokenMetadata",
+              "type": "t_mapping(t_uint256,t_struct(LpTokenMetadata)10270_storage)",
+              "src": "contracts/hyphen/token/LPToken.sol:29"
+            },
+            {
+              "contract": "LPToken",
+              "label": "svgHelpers",
+              "type": "t_mapping(t_address,t_contract(ISvgHelper)9856)",
+              "src": "contracts/hyphen/token/LPToken.sol:30"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_contract(IWhiteListPeriodManager)10083": {
+              "label": "contract IWhiteListPeriodManager"
+            },
+            "t_mapping(t_uint256,t_struct(LpTokenMetadata)10270_storage)": {
+              "label": "mapping(uint256 => struct LpTokenMetadata)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_struct(LpTokenMetadata)10270_storage": {
+              "label": "struct LpTokenMetadata",
+              "members": [
+                {
+                  "label": "token",
+                  "type": "t_address"
+                },
+                {
+                  "label": "suppliedLiquidity",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "shares",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_mapping(t_address,t_contract(ISvgHelper)9856)": {
+              "label": "mapping(address => contract ISvgHelper)"
+            },
+            "t_contract(ISvgHelper)9856": {
+              "label": "contract ISvgHelper"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "TokenManager": {
+        "src": "contracts/hyphen/token/TokenManager.sol:10",
+        "version": {
+          "withMetadata": "d9c0d5145fbc718363b7f92441cb204590bc032886bdc7b5a1de70bb70c7ac32",
+          "withoutMetadata": "37f792f41f456756e140451162ccd37a905016395ec7a96f9891b51496408719",
+          "linkedWithoutMetadata": "37f792f41f456756e140451162ccd37a905016395ec7a96f9891b51496408719"
+        },
+        "inherit": [
+          "Pausable",
+          "Ownable",
+          "ERC2771Context",
+          "Context",
+          "ITokenManager"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "getEquilibriumFee(address)",
+          "getMaxFee(address)",
+          "changeFee(address,uint256,uint256)",
+          "setTokenTransferOverhead(address,uint256)",
+          "setDepositConfig(uint256[],address[],struct ITokenManager.TokenConfig[])",
+          "addSupportedToken(address,uint256,uint256,uint256,uint256)",
+          "removeSupportedToken(address)",
+          "updateTokenCap(address,uint256,uint256)",
+          "getTokensInfo(address)",
+          "getDepositConfig(uint256,address)",
+          "getTransferConfig(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "TokenManager",
+            "src": "contracts/hyphen/token/TokenManager.sol:32"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "TokenManager",
+              "label": "tokensInfo",
+              "type": "t_mapping(t_address,t_struct(TokenInfo)9870_storage)",
+              "src": "contracts/hyphen/token/TokenManager.sol:11"
+            },
+            {
+              "contract": "TokenManager",
+              "label": "depositConfig",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(TokenConfig)9875_storage))",
+              "src": "contracts/hyphen/token/TokenManager.sol:25"
+            },
+            {
+              "contract": "TokenManager",
+              "label": "transferConfig",
+              "type": "t_mapping(t_address,t_struct(TokenConfig)9875_storage)",
+              "src": "contracts/hyphen/token/TokenManager.sol:30"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_struct(TokenInfo)9870_storage)": {
+              "label": "mapping(address => struct ITokenManager.TokenInfo)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_struct(TokenInfo)9870_storage": {
+              "label": "struct ITokenManager.TokenInfo",
+              "members": [
+                {
+                  "label": "transferOverhead",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "supportedToken",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "equilibriumFee",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "maxFee",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "tokenConfig",
+                  "type": "t_struct(TokenConfig)9875_storage"
+                }
+              ]
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_struct(TokenConfig)9875_storage": {
+              "label": "struct ITokenManager.TokenConfig",
+              "members": [
+                {
+                  "label": "min",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "max",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_mapping(t_uint256,t_mapping(t_address,t_struct(TokenConfig)9875_storage))": {
+              "label": "mapping(uint256 => mapping(address => struct ITokenManager.TokenConfig))"
+            },
+            "t_mapping(t_address,t_struct(TokenConfig)9875_storage)": {
+              "label": "mapping(address => struct ITokenManager.TokenConfig)"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AvalancheBICO": {
+        "src": "contracts/hyphen/token/svg-helpers/Avalanche/Avalanche.BICO.sol:6",
+        "version": {
+          "withMetadata": "55585660a20e5b0fec9d74d7b40ad12347764ba644db79a069e32b8ed496280b",
+          "withoutMetadata": "aa6850a39e43c67b6addab2214fc27a62d7ba8e46d0bdce886867f3bd0ee222b",
+          "linkedWithoutMetadata": "aa6850a39e43c67b6addab2214fc27a62d7ba8e46d0bdce886867f3bd0ee222b"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AvalancheBICO",
+            "src": "contracts/hyphen/token/svg-helpers/Avalanche/Avalanche.BICO.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AvalancheETH": {
+        "src": "contracts/hyphen/token/svg-helpers/Avalanche/Avalanche.ETH.sol:6",
+        "version": {
+          "withMetadata": "0aebe62b13fc7fe1514a5d5006e7f13eff3f3d51b594757a081d32ba770469df",
+          "withoutMetadata": "f25fc658efa4489c72d0322444db62c2e71e3a554fe965942d99ea21d66766c5",
+          "linkedWithoutMetadata": "f25fc658efa4489c72d0322444db62c2e71e3a554fe965942d99ea21d66766c5"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AvalancheETH",
+            "src": "contracts/hyphen/token/svg-helpers/Avalanche/Avalanche.ETH.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AvalancheUSDC": {
+        "src": "contracts/hyphen/token/svg-helpers/Avalanche/Avalanche.USDC.sol:6",
+        "version": {
+          "withMetadata": "c4b9c8ed1c89d3dea408defd53f8adcd28ad219e7c2c1d2e170ab039d131c361",
+          "withoutMetadata": "2070cb528f79df46de927fb6b33a18b3bb6347263e6a9dcafdb0008ea3ebeec8",
+          "linkedWithoutMetadata": "2070cb528f79df46de927fb6b33a18b3bb6347263e6a9dcafdb0008ea3ebeec8"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AvalancheUSDC",
+            "src": "contracts/hyphen/token/svg-helpers/Avalanche/Avalanche.USDC.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AvalancheUSDT": {
+        "src": "contracts/hyphen/token/svg-helpers/Avalanche/Avalanche.USDT.sol:6",
+        "version": {
+          "withMetadata": "aa6fe3e998089617151f8e37dc1d7cdae6e7a3a97dd19a7e6636dd83a75e3978",
+          "withoutMetadata": "f22b707390f3425ee8dfed0c87d31dbc9aadeb4cd0631c78ef06af3f3dce70b4",
+          "linkedWithoutMetadata": "f22b707390f3425ee8dfed0c87d31dbc9aadeb4cd0631c78ef06af3f3dce70b4"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AvalancheUSDT",
+            "src": "contracts/hyphen/token/svg-helpers/Avalanche/Avalanche.USDT.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "EthereumBICO": {
+        "src": "contracts/hyphen/token/svg-helpers/Ethereum/Ethereum.BICO.sol:6",
+        "version": {
+          "withMetadata": "2e1a162b6027f837e827f4e83d68c5a64f905f2f2369095144ec3ce6a60eeb9d",
+          "withoutMetadata": "3ce567d7cf0b145aa71cf16c4070eab3095635ecda48f9cb4ba7d56514777b0a",
+          "linkedWithoutMetadata": "3ce567d7cf0b145aa71cf16c4070eab3095635ecda48f9cb4ba7d56514777b0a"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "EthereumBICO",
+            "src": "contracts/hyphen/token/svg-helpers/Ethereum/Ethereum.BICO.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "EthereumETH": {
+        "src": "contracts/hyphen/token/svg-helpers/Ethereum/Ethereum.ETH.sol:6",
+        "version": {
+          "withMetadata": "c48ae47ee190e9c5f1670ae65e2dd2f4ec9395a75d0e8e0d1ff7cb379bfcd490",
+          "withoutMetadata": "3344348887f463691ac867ae6ce187bb29c97dbf6c81b2d5c97e8a10595f495e",
+          "linkedWithoutMetadata": "3344348887f463691ac867ae6ce187bb29c97dbf6c81b2d5c97e8a10595f495e"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "EthereumETH",
+            "src": "contracts/hyphen/token/svg-helpers/Ethereum/Ethereum.ETH.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "EthereumUSDC": {
+        "src": "contracts/hyphen/token/svg-helpers/Ethereum/Ethereum.USDC.sol:6",
+        "version": {
+          "withMetadata": "fd57bcfbc5c60d8ffdee1ea24b7b7c104e71bdb0462b60727a2e8cefb9c6683d",
+          "withoutMetadata": "4423341506f31fd7d98d7a656069799674c8fb5fe043cc3aaeb91dd428fa6bcd",
+          "linkedWithoutMetadata": "4423341506f31fd7d98d7a656069799674c8fb5fe043cc3aaeb91dd428fa6bcd"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "EthereumUSDC",
+            "src": "contracts/hyphen/token/svg-helpers/Ethereum/Ethereum.USDC.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "EthereumUSDT": {
+        "src": "contracts/hyphen/token/svg-helpers/Ethereum/Ethereum.USDT.sol:6",
+        "version": {
+          "withMetadata": "b1e05e3f60876a983287b1c331b7db956f62f16dc22d71c2c9d93d6bee2d32b3",
+          "withoutMetadata": "51895f4a3d9c3b599d9a59e979d59e4b22eff950e595ffb90415001fdf4b3caa",
+          "linkedWithoutMetadata": "51895f4a3d9c3b599d9a59e979d59e4b22eff950e595ffb90415001fdf4b3caa"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "EthereumUSDT",
+            "src": "contracts/hyphen/token/svg-helpers/Ethereum/Ethereum.USDT.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "PolygonBICO": {
+        "src": "contracts/hyphen/token/svg-helpers/Polygon/Polygon.BICO.sol:6",
+        "version": {
+          "withMetadata": "4186088ebc10e03c3284aae70bfad5d16392b38f968820c3265687cb93b4396a",
+          "withoutMetadata": "cf45b03c55066c389c153f14d4df8c51642b21b5483e71f9d6d528555888aaa3",
+          "linkedWithoutMetadata": "cf45b03c55066c389c153f14d4df8c51642b21b5483e71f9d6d528555888aaa3"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "PolygonBICO",
+            "src": "contracts/hyphen/token/svg-helpers/Polygon/Polygon.BICO.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "PolygonETH": {
+        "src": "contracts/hyphen/token/svg-helpers/Polygon/Polygon.ETH.sol:6",
+        "version": {
+          "withMetadata": "f39461325cc406a0df488c60339d3e414709b54bb25bd352d078cef06c67a4a2",
+          "withoutMetadata": "be0dc51b7727dbbbcd3e750ebed2748f5c4a454558e9b4c2567c059c97520b70",
+          "linkedWithoutMetadata": "be0dc51b7727dbbbcd3e750ebed2748f5c4a454558e9b4c2567c059c97520b70"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "PolygonETH",
+            "src": "contracts/hyphen/token/svg-helpers/Polygon/Polygon.ETH.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "PolygonUSDC": {
+        "src": "contracts/hyphen/token/svg-helpers/Polygon/Polygon.USDC.sol:6",
+        "version": {
+          "withMetadata": "808820347de639535fc360af9f4a04324c763a5224b17a4dacf38360d47d60bd",
+          "withoutMetadata": "f0c85c48c479e7181864916b15d47e0f41f2d9d6330f9c8a67c3d1d6eb3f7d3e",
+          "linkedWithoutMetadata": "f0c85c48c479e7181864916b15d47e0f41f2d9d6330f9c8a67c3d1d6eb3f7d3e"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "PolygonUSDC",
+            "src": "contracts/hyphen/token/svg-helpers/Polygon/Polygon.USDC.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "PolygonUSDT": {
+        "src": "contracts/hyphen/token/svg-helpers/Polygon/Polygon.USDT.sol:6",
+        "version": {
+          "withMetadata": "f4d956f4b8cd0baa37894d613e83cc1aaee03020a886f683e76cb0282061ce1f",
+          "withoutMetadata": "bce116c12e209d511068b1c3d0056b3127721206eefc90c5e8f20ead9d00b4c1",
+          "linkedWithoutMetadata": "bce116c12e209d511068b1c3d0056b3127721206eefc90c5e8f20ead9d00b4c1"
+        },
+        "inherit": [
+          "SvgHelperBase",
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "(uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "PolygonUSDT",
+            "src": "contracts/hyphen/token/svg-helpers/Polygon/Polygon.USDT.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SvgHelperBase": {
+        "src": "contracts/hyphen/token/svg-helpers/SvgHelperBase.sol:8",
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [
+          "setTokenDecimals(uint256)",
+          "getAttributes(uint256,uint256)",
+          "getDescription(uint256,uint256)",
+          "getTokenSvg(uint256,uint256,uint256)",
+          "getChainName()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SvgHelperBase",
+            "src": "contracts/hyphen/token/svg-helpers/SvgHelperBase.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "SvgHelperBase",
+              "label": "tokenDecimals",
+              "type": "t_uint256",
+              "src": "contracts/hyphen/token/svg-helpers/SvgHelperBase.sol:11"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Detailed": {
+        "src": "contracts/interfaces/IERC20Permit.sol:6",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Nonces": {
+        "src": "contracts/interfaces/IERC20Permit.sol:11",
+        "inherit": [
+          "IERC20Detailed",
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "nonces(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Permit": {
+        "src": "contracts/interfaces/IERC20Permit.sol:15",
+        "inherit": [
+          "IERC20Nonces",
+          "IERC20Detailed",
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "permit(address,address,uint256,uint256,bool,uint8,bytes32,bytes32)",
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20Token": {
+        "src": "contracts/test/ERC20Token.sol:6",
+        "version": {
+          "withMetadata": "e7352fecc592ab67ffc6946be666d9d851d1b109a8f517f43ab2533113f8c3a8",
+          "withoutMetadata": "3c9d8a5e1283ad10bccd61167e9f06aa27f24ac4db80756d11598ca14578f3e7",
+          "linkedWithoutMetadata": "3c9d8a5e1283ad10bccd61167e9f06aa27f24ac4db80756d11598ca14578f3e7"
+        },
+        "inherit": [
+          "ERC20Upgradeable",
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(string,string)",
+          "mint(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "LiquidityProvidersMaliciousReentrant": {
+        "src": "contracts/test/LiquidityProvidersMaliciousReentrant.sol:5",
+        "version": {
+          "withMetadata": "4a45ea216bf0affdd02d04574fcf3b018216b9eca4c628efbdc5cd0c169f7ce3",
+          "withoutMetadata": "1b3b87d34eb645eb92633c8aaf69a0c1bbc610293d3dcb4f42269317a55a7ae8",
+          "linkedWithoutMetadata": "1b3b87d34eb645eb92633c8aaf69a0c1bbc610293d3dcb4f42269317a55a7ae8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "()",
+          "()",
+          "getBalance(address)",
+          "destruct()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "LiquidityProvidersMaliciousReentrant",
+            "src": "contracts/test/LiquidityProvidersMaliciousReentrant.sol:14"
+          },
+          {
+            "kind": "selfdestruct",
+            "src": "contracts/test/LiquidityProvidersMaliciousReentrant.sol:36"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "LiquidityProvidersMaliciousReentrant",
+              "label": "lpool",
+              "type": "t_contract(LiquidityPool)6961",
+              "src": "contracts/test/LiquidityProvidersMaliciousReentrant.sol:6"
+            },
+            {
+              "contract": "LiquidityProvidersMaliciousReentrant",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/test/LiquidityProvidersMaliciousReentrant.sol:8"
+            }
+          ],
+          "types": {
+            "t_contract(LiquidityPool)6961": {
+              "label": "contract LiquidityPool"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "LiquidityProvidersTest": {
+        "src": "contracts/test/LiquidityProvidersTest.sol:7",
+        "version": {
+          "withMetadata": "d9e8bdaa50e1b01e64b12a9b480ba658d31be0db4432bf96823bc32e3c9c8c06",
+          "withoutMetadata": "64fb3a9d922726766652c34ba0458a05129d0c8db52e3efea00c3af40a4f5bd3",
+          "linkedWithoutMetadata": "64fb3a9d922726766652c34ba0458a05129d0c8db52e3efea00c3af40a4f5bd3"
+        },
+        "inherit": [
+          "LiquidityProviders",
+          "Pausable",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ERC2771ContextUpgradeable",
+          "ContextUpgradeable",
+          "ReentrancyGuardUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeERC20Upgradeable"
+        ],
+        "methods": [
+          "addLpFeeTesting(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "TokenMintingReentrancy": {
+        "src": "contracts/test/TokenMintingReentrancy.sol:6",
+        "version": {
+          "withMetadata": "3d1fca02b2833f531d6950fb675067583349d0d28fc126a54ab40ca05a9c2061",
+          "withoutMetadata": "ea5758c7d8fb2db8a9982d91e545f3c2d0a0cb09a6d3dc8a6bf6a82cb9910b21",
+          "linkedWithoutMetadata": "ea5758c7d8fb2db8a9982d91e545f3c2d0a0cb09a6d3dc8a6bf6a82cb9910b21"
+        },
+        "inherit": [
+          "IERC721ReceiverUpgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "onERC721Received(address,address,uint256,bytes)",
+          "()",
+          "attack()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "TokenMintingReentrancy",
+            "src": "contracts/test/TokenMintingReentrancy.sol:9"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "TokenMintingReentrancy",
+              "label": "liquidityproviders",
+              "type": "t_contract(LiquidityProviders)8352",
+              "src": "contracts/test/TokenMintingReentrancy.sol:7"
+            }
+          ],
+          "types": {
+            "t_contract(LiquidityProviders)8352": {
+              "label": "contract LiquidityProviders"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "63c786a66109f7709a3599835ffd424d5de5ce3cbc623a77545f3f16bbedef95",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}

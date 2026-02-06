@@ -1,0 +1,21 @@
+{
+  "name": "20",
+  "version": "1.0.0",
+  "description": "- $80,000USDC main award pot - Join [C4 Discord](https://discord.gg/EY5dvm3evD) to register - Submit findings [using the C4 form](https://code423n4.com/2021-07-spartan-protocol-contest/submit) - [Read our guidelines for more details](https://code423n4.com/compete) - Starts 2021-07-15 00:00 UTC - Ends 2021-07-21 23:59 UTC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.3",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "chai": "^6.2.1",
+    "ethers": "^5.8.0",
+    "hardhat": "^2.26.3",
+    "solc": "^0.8.3"
+  }
+}

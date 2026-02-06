@@ -1,0 +1,1199 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "OwnableUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:21",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+            },
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20Upgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol:18",
+        "version": {
+          "withMetadata": "09848a10d9b20900aba5e137e2ea864e5a1ddfd7186f879b1e510aa332f19dbf",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "bfd2db438b9fb1f7efaa0b53dd804a2074fda2de175e17741dc57fc708619b6a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ContextUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:17",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ContextUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Clones": {
+        "src": "@openzeppelin/contracts/proxy/Clones.sol:19",
+        "version": {
+          "withMetadata": "ef401874cbb4e8a3053570fbc9d92bc4496ccc0abc717cda7261ae0788a314b8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/ERC20.sol:35",
+        "version": {
+          "withMetadata": "c986056eac6993d747aac78e27c675ff5f1435b20e119f032133b45cb782c7aa",
+          "withoutMetadata": "2b24d0496d2d4a0da4442b75304ad90c5b41d91304a08fd1ac8bddafe7dc65c7",
+          "linkedWithoutMetadata": "2b24d0496d2d4a0da4442b75304ad90c5b41d91304a08fd1ac8bddafe7dc65c7"
+        },
+        "inherit": [
+          "IERC20Metadata",
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "(string,string)",
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC20",
+            "src": "@openzeppelin/contracts/token/ERC20/ERC20.sol:54"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC20",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20.sol:36"
+            },
+            {
+              "contract": "ERC20",
+              "label": "_allowances",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20.sol:38"
+            },
+            {
+              "contract": "ERC20",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20.sol:40"
+            },
+            {
+              "contract": "ERC20",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20.sol:42"
+            },
+            {
+              "contract": "ERC20",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20.sol:43"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_string_storage": {
+              "label": "string"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Metadata": {
+        "src": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:13",
+        "inherit": [
+          "IERC20"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "LaunchEvent": {
+        "src": "contracts/LaunchEvent.sol:19",
+        "version": {
+          "withMetadata": "64c926b71f8d225e6c9630e71a992b03c0a81cfae632ad559c227793afca6333",
+          "withoutMetadata": "79adee176f5d2b294ebaad9d8c6256ea32000bbf69dc7211d5d0018d1181fd41",
+          "linkedWithoutMetadata": "79adee176f5d2b294ebaad9d8c6256ea32000bbf69dc7211d5d0018d1181fd41"
+        },
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "initialize(address,uint256,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256)",
+          "currentPhase()",
+          "depositAVAX()",
+          "withdrawAVAX(uint256)",
+          "createPair()",
+          "withdrawLiquidity()",
+          "withdrawIncentives()",
+          "emergencyWithdraw()",
+          "allowEmergencyWithdraw()",
+          "skim()",
+          "getPenalty()",
+          "getReserves()",
+          "getRJoeAmount(uint256)",
+          "pairBalance(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "LaunchEvent",
+              "label": "issuer",
+              "type": "t_address",
+              "src": "contracts/LaunchEvent.sol:43"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "auctionStart",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:46"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "PHASE_ONE_DURATION",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:48"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "PHASE_ONE_NO_FEE_DURATION",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:49"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "PHASE_TWO_DURATION",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:50"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "tokenIncentivesPercent",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:56"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "floorPrice",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:60"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "userTimelock",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:63"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "issuerTimelock",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:66"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "maxWithdrawPenalty",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:70"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "fixedWithdrawPenalty",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:74"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "rJoe",
+              "type": "t_contract(IRocketJoeToken)5361",
+              "src": "contracts/LaunchEvent.sol:76"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "rJoePerAvax",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:77"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "WAVAX",
+              "type": "t_contract(IWAVAX)5397",
+              "src": "contracts/LaunchEvent.sol:78"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "token",
+              "type": "t_contract(IERC20Metadata)1624",
+              "src": "contracts/LaunchEvent.sol:79"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "router",
+              "type": "t_contract(IJoeRouter02)5066",
+              "src": "contracts/LaunchEvent.sol:81"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "factory",
+              "type": "t_contract(IJoeFactory)4428",
+              "src": "contracts/LaunchEvent.sol:82"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "rocketJoeFactory",
+              "type": "t_contract(IRocketJoeFactory)5271",
+              "src": "contracts/LaunchEvent.sol:83"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "contracts/LaunchEvent.sol:85"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "stopped",
+              "type": "t_bool",
+              "src": "contracts/LaunchEvent.sol:86"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "maxAllocation",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:88"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "getUserInfo",
+              "type": "t_mapping(t_address,t_struct(UserInfo)1677_storage)",
+              "src": "contracts/LaunchEvent.sol:90"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "pair",
+              "type": "t_contract(IJoePair)4670",
+              "src": "contracts/LaunchEvent.sol:93"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "wavaxAllocated",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:97"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "lpSupply",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:100"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "tokenReserve",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:107"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "tokenIncentivesBalance",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:111"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "tokenIncentivesForUsers",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:113"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "tokenIncentiveIssuerRefund",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:117"
+            },
+            {
+              "contract": "LaunchEvent",
+              "label": "wavaxReserve",
+              "type": "t_uint256",
+              "src": "contracts/LaunchEvent.sol:122"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_contract(IRocketJoeToken)5361": {
+              "label": "contract IRocketJoeToken"
+            },
+            "t_contract(IWAVAX)5397": {
+              "label": "contract IWAVAX"
+            },
+            "t_contract(IERC20Metadata)1624": {
+              "label": "contract IERC20Metadata"
+            },
+            "t_contract(IJoeRouter02)5066": {
+              "label": "contract IJoeRouter02"
+            },
+            "t_contract(IJoeFactory)4428": {
+              "label": "contract IJoeFactory"
+            },
+            "t_contract(IRocketJoeFactory)5271": {
+              "label": "contract IRocketJoeFactory"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_struct(UserInfo)1677_storage)": {
+              "label": "mapping(address => struct LaunchEvent.UserInfo)"
+            },
+            "t_struct(UserInfo)1677_storage": {
+              "label": "struct LaunchEvent.UserInfo",
+              "members": [
+                {
+                  "label": "allocation",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "balance",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "hasWithdrawnPair",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "hasWithdrawnIncentives",
+                  "type": "t_bool"
+                }
+              ]
+            },
+            "t_contract(IJoePair)4670": {
+              "label": "contract IJoePair"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "RocketJoeFactory": {
+        "src": "contracts/RocketJoeFactory.sol:19",
+        "version": {
+          "withMetadata": "2412f4d51b7251bd1d6da21463911ee1f1d5cb989999f12426d6e826c7207c36",
+          "withoutMetadata": "86f1051cafd3c7d6e93d7e5e8877f352683bfe41c5ce9e0afbc36050308e9245",
+          "linkedWithoutMetadata": "86f1051cafd3c7d6e93d7e5e8877f352683bfe41c5ce9e0afbc36050308e9245"
+        },
+        "inherit": [
+          "Ownable",
+          "Context",
+          "IRocketJoeFactory"
+        ],
+        "libraries": [
+          "Clones"
+        ],
+        "methods": [
+          "(address,address,address,address,address,address)",
+          "numLaunchEvents()",
+          "createRJLaunchEvent(address,uint256,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256)",
+          "setRJoe(address)",
+          "setPenaltyCollector(address)",
+          "setRouter(address)",
+          "setFactory(address)",
+          "setRJoePerAvax(uint256)",
+          "setPhaseDuration(uint256,uint256)",
+          "setPhaseOneNoFeeDuration(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "RocketJoeFactory",
+            "src": "contracts/RocketJoeFactory.sol:45"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "PHASE_ONE_DURATION",
+            "src": "contracts/RocketJoeFactory.sol:29"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "PHASE_ONE_NO_FEE_DURATION",
+            "src": "contracts/RocketJoeFactory.sol:30"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "PHASE_TWO_DURATION",
+            "src": "contracts/RocketJoeFactory.sol:31"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "RocketJoeFactory",
+              "label": "penaltyCollector",
+              "type": "t_address",
+              "src": "contracts/RocketJoeFactory.sol:20"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "eventImplementation",
+              "type": "t_address",
+              "src": "contracts/RocketJoeFactory.sol:21"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "rJoe",
+              "type": "t_address",
+              "src": "contracts/RocketJoeFactory.sol:23"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "rJoePerAvax",
+              "type": "t_uint256",
+              "src": "contracts/RocketJoeFactory.sol:24"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "wavax",
+              "type": "t_address",
+              "src": "contracts/RocketJoeFactory.sol:25"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "router",
+              "type": "t_address",
+              "src": "contracts/RocketJoeFactory.sol:26"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "factory",
+              "type": "t_address",
+              "src": "contracts/RocketJoeFactory.sol:27"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "PHASE_ONE_DURATION",
+              "type": "t_uint256",
+              "src": "contracts/RocketJoeFactory.sol:29"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "PHASE_ONE_NO_FEE_DURATION",
+              "type": "t_uint256",
+              "src": "contracts/RocketJoeFactory.sol:30"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "PHASE_TWO_DURATION",
+              "type": "t_uint256",
+              "src": "contracts/RocketJoeFactory.sol:31"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "getRJLaunchEvent",
+              "type": "t_mapping(t_address,t_address)",
+              "src": "contracts/RocketJoeFactory.sol:33"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "isRJLaunchEvent",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/RocketJoeFactory.sol:34"
+            },
+            {
+              "contract": "RocketJoeFactory",
+              "label": "allRJLaunchEvents",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/RocketJoeFactory.sol:35"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "RocketJoeStaking": {
+        "src": "contracts/RocketJoeStaking.sol:14",
+        "version": {
+          "withMetadata": "c558caa82bc0af33e4ebae0e29df79d0deaad0989278a7e78899dbd3d87bbe0c",
+          "withoutMetadata": "bf2a912c56909d2386d1abb106dcf8041d4c50577becb31d449b360ff675e42a",
+          "linkedWithoutMetadata": "bf2a912c56909d2386d1abb106dcf8041d4c50577becb31d449b360ff675e42a"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeERC20Upgradeable"
+        ],
+        "methods": [
+          "initialize(address,address,uint256,uint256)",
+          "pendingRJoe(address)",
+          "deposit(uint256)",
+          "withdraw(uint256)",
+          "emergencyWithdraw()",
+          "updateEmissionRate(uint256)",
+          "updatePool()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "RocketJoeStaking",
+              "label": "joe",
+              "type": "t_contract(IERC20Upgradeable)277",
+              "src": "contracts/RocketJoeStaking.sol:33"
+            },
+            {
+              "contract": "RocketJoeStaking",
+              "label": "lastRewardTimestamp",
+              "type": "t_uint256",
+              "src": "contracts/RocketJoeStaking.sol:34"
+            },
+            {
+              "contract": "RocketJoeStaking",
+              "label": "accRJoePerShare",
+              "type": "t_uint256",
+              "src": "contracts/RocketJoeStaking.sol:37"
+            },
+            {
+              "contract": "RocketJoeStaking",
+              "label": "PRECISION",
+              "type": "t_uint256",
+              "src": "contracts/RocketJoeStaking.sol:39"
+            },
+            {
+              "contract": "RocketJoeStaking",
+              "label": "rJoe",
+              "type": "t_contract(RocketJoeToken)4355",
+              "src": "contracts/RocketJoeStaking.sol:41"
+            },
+            {
+              "contract": "RocketJoeStaking",
+              "label": "rJoePerSec",
+              "type": "t_uint256",
+              "src": "contracts/RocketJoeStaking.sol:42"
+            },
+            {
+              "contract": "RocketJoeStaking",
+              "label": "userInfo",
+              "type": "t_mapping(t_address,t_struct(UserInfo)3718_storage)",
+              "src": "contracts/RocketJoeStaking.sol:45"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20Upgradeable)277": {
+              "label": "contract IERC20Upgradeable"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_contract(RocketJoeToken)4355": {
+              "label": "contract RocketJoeToken"
+            },
+            "t_mapping(t_address,t_struct(UserInfo)3718_storage)": {
+              "label": "mapping(address => struct RocketJoeStaking.UserInfo)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_struct(UserInfo)3718_storage": {
+              "label": "struct RocketJoeStaking.UserInfo",
+              "members": [
+                {
+                  "label": "amount",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "rewardDebt",
+                  "type": "t_uint256"
+                }
+              ]
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "RocketJoeToken": {
+        "src": "contracts/RocketJoeToken.sol:12",
+        "version": {
+          "withMetadata": "4c9f8e546f95e1892c361623def4331f576ecd54afcd88a0f123e13c7a7467c8",
+          "withoutMetadata": "259cc0e5f0343758e07a9e7ddf5dd7974740981b71f31f41fcb6796272bcc00f",
+          "linkedWithoutMetadata": "259cc0e5f0343758e07a9e7ddf5dd7974740981b71f31f41fcb6796272bcc00f"
+        },
+        "inherit": [
+          "Ownable",
+          "ERC20",
+          "IERC20Metadata",
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize()",
+          "mint(address,uint256)",
+          "burnFrom(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "RocketJoeToken",
+              "label": "rocketJoeFactory",
+              "type": "t_contract(IRocketJoeFactory)5271",
+              "src": "contracts/RocketJoeToken.sol:13"
+            }
+          ],
+          "types": {
+            "t_contract(IRocketJoeFactory)5271": {
+              "label": "contract IRocketJoeFactory"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IJoeFactory": {
+        "src": "contracts/interfaces/IJoeFactory.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "feeTo()",
+          "feeToSetter()",
+          "migrator()",
+          "getPair(address,address)",
+          "allPairs(uint256)",
+          "allPairsLength()",
+          "createPair(address,address)",
+          "setFeeTo(address)",
+          "setFeeToSetter(address)",
+          "setMigrator(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IJoePair": {
+        "src": "contracts/interfaces/IJoePair.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transfer(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "DOMAIN_SEPARATOR()",
+          "PERMIT_TYPEHASH()",
+          "nonces(address)",
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "MINIMUM_LIQUIDITY()",
+          "factory()",
+          "token0()",
+          "token1()",
+          "getReserves()",
+          "price0CumulativeLast()",
+          "price1CumulativeLast()",
+          "kLast()",
+          "mint(address)",
+          "burn(address)",
+          "swap(uint256,uint256,address,bytes)",
+          "skim(address)",
+          "sync()",
+          "initialize(address,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IJoeRouter01": {
+        "src": "contracts/interfaces/IJoeRouter01.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "factory()",
+          "WAVAX()",
+          "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+          "addLiquidityAVAX(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityAVAX(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "removeLiquidityAVAXWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+          "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+          "swapExactAVAXForTokens(uint256,address[],address,uint256)",
+          "swapTokensForExactAVAX(uint256,uint256,address[],address,uint256)",
+          "swapExactTokensForAVAX(uint256,uint256,address[],address,uint256)",
+          "swapAVAXForExactTokens(uint256,address[],address,uint256)",
+          "quote(uint256,uint256,uint256)",
+          "getAmountOut(uint256,uint256,uint256)",
+          "getAmountIn(uint256,uint256,uint256)",
+          "getAmountsOut(uint256,address[])",
+          "getAmountsIn(uint256,address[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IJoeRouter02": {
+        "src": "contracts/interfaces/IJoeRouter02.sol:7",
+        "inherit": [
+          "IJoeRouter01"
+        ],
+        "libraries": [],
+        "methods": [
+          "removeLiquidityAVAXSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityAVAXWithPermitSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+          "swapExactAVAXForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
+          "swapExactTokensForAVAXSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ILaunchEvent": {
+        "src": "contracts/interfaces/ILaunchEvent.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "initialize(address,uint256,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IRocketJoeFactory": {
+        "src": "contracts/interfaces/IRocketJoeFactory.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "eventImplementation()",
+          "penaltyCollector()",
+          "wavax()",
+          "rJoePerAvax()",
+          "router()",
+          "factory()",
+          "rJoe()",
+          "PHASE_ONE_DURATION()",
+          "PHASE_ONE_NO_FEE_DURATION()",
+          "PHASE_TWO_DURATION()",
+          "getRJLaunchEvent(address)",
+          "isRJLaunchEvent(address)",
+          "allRJLaunchEvents(uint256)",
+          "numLaunchEvents()",
+          "createRJLaunchEvent(address,uint256,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256)",
+          "setPenaltyCollector(address)",
+          "setRouter(address)",
+          "setFactory(address)",
+          "setRJoe(address)",
+          "setRJoePerAvax(uint256)",
+          "setPhaseDuration(uint256,uint256)",
+          "setPhaseOneNoFeeDuration(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IRocketJoeToken": {
+        "src": "contracts/interfaces/IRocketJoeToken.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "initialize()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "burnFrom(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IWAVAX": {
+        "src": "contracts/interfaces/IWAVAX.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "deposit()",
+          "transfer(address,uint256)",
+          "withdraw(uint256)",
+          "balanceOf(address)",
+          "approve(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20Token": {
+        "src": "contracts/mocks/ERC20Token.sol:11",
+        "version": {
+          "withMetadata": "26688858989b4fdf21403ab6837eabd2bc3ab89db4869857717d797f3149e6a9",
+          "withoutMetadata": "8a8c0b39b8f2388133806d05306e70255790b5f96db905aa4caabfb28213ce24",
+          "linkedWithoutMetadata": "8a8c0b39b8f2388133806d05306e70255790b5f96db905aa4caabfb28213ce24"
+        },
+        "inherit": [
+          "Ownable",
+          "ERC20",
+          "IERC20Metadata",
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "mint(address,uint256)",
+          "burn(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20Token6decimals": {
+        "src": "contracts/mocks/ERC20Token6decimals.sol:11",
+        "version": {
+          "withMetadata": "5569f9d451d3147efe6086abca164af210248a98d1948cc275663982f6b30801",
+          "withoutMetadata": "40c042e25f70939c23dc6479f8c7a18c551824b70ee531a874ada31246068b9f",
+          "linkedWithoutMetadata": "40c042e25f70939c23dc6479f8c7a18c551824b70ee531a874ada31246068b9f"
+        },
+        "inherit": [
+          "Ownable",
+          "ERC20",
+          "IERC20Metadata",
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "mint(address,uint256)",
+          "burn(uint256)",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}

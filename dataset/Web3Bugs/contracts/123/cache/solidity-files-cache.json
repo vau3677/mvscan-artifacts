@@ -1,0 +1,1772 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/Aura.sol": {
+      "lastModificationDate": 1759178521614,
+      "contentHash": "e367491330ab56770d041ef669f74a1f",
+      "sourceName": "contracts/Aura.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts-0.8/utils/Address.sol",
+        "./AuraMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "AuraToken",
+        "IStaker"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/node_modules/@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1760019171747,
+      "contentHash": "302d9755e46bc69d7058b0cbe7185e37",
+      "sourceName": "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/node_modules/@openzeppelin/contracts-0.8/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1760019171575,
+      "contentHash": "f48de0eaae9544072b8766e2eac528a7",
+      "sourceName": "@openzeppelin/contracts-0.8/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/node_modules/@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1760019171847,
+      "contentHash": "76814c83c32552ed2b521c816b4d801a",
+      "sourceName": "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/node_modules/@openzeppelin/contracts-0.8/utils/Address.sol": {
+      "lastModificationDate": 1760019171399,
+      "contentHash": "4cff8b2ea0d958750786b4e3ca308445",
+      "sourceName": "@openzeppelin/contracts-0.8/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/AuraMath.sol": {
+      "lastModificationDate": 1759178521614,
+      "contentHash": "ca3f8b09606fb2ac2a71845362b26f9a",
+      "sourceName": "contracts/AuraMath.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "AuraMath",
+        "AuraMath112",
+        "AuraMath224",
+        "AuraMath32"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/node_modules/@openzeppelin/contracts-0.8/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1760019171755,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts-0.8/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/node_modules/@openzeppelin/contracts-0.8/utils/Context.sol": {
+      "lastModificationDate": 1760019171439,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts-0.8/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/AuraMinter.sol": {
+      "lastModificationDate": 1759178521614,
+      "contentHash": "3027c9755aa81a8daac11282c92bf781",
+      "sourceName": "contracts/AuraMinter.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/access/Ownable.sol",
+        "./Aura.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "AuraMinter"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/node_modules/@openzeppelin/contracts-0.8/access/Ownable.sol": {
+      "lastModificationDate": 1760019171811,
+      "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
+      "sourceName": "@openzeppelin/contracts-0.8/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/curve/MockERC20.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "828a82555fabdf70c1fb254a47aa8c66",
+      "sourceName": "contracts/mocks/curve/MockERC20.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "MockERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/curve/MockCurveVoteEscrow.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "6bf6fe86296b6d1f25fdea652588b57f",
+      "sourceName": "contracts/mocks/curve/MockCurveVoteEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/ERC20.sol",
+        "./MockWalletChecker.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "MockCurveVoteEscrow"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/curve/MockWalletChecker.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "57b8698aa05f2928bee8ccb7445c6a32",
+      "sourceName": "contracts/mocks/curve/MockWalletChecker.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "MockWalletChecker"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/MockBalInvestor.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "4e2537caa1161b3d77220ff1b2aa9b6c",
+      "sourceName": "contracts/mocks/MockBalInvestor.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "../CrvDepositorWrapper.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "MockBalInvestor"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/CrvDepositorWrapper.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "b24fb483f46b9bce802f429ebd14deb0",
+      "sourceName": "contracts/CrvDepositorWrapper.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol",
+        "./Interfaces.sol",
+        "./Interfaces.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "BalInvestor",
+        "CrvDepositorWrapper",
+        "ICrvDepositor"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/Interfaces.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "5c2c66b7a688dedf1a888d3cad41c608",
+      "sourceName": "contracts/Interfaces.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "IAsset",
+        "IAuraLocker",
+        "ICrvDepositorWrapper",
+        "IExtraRewardsDistributor",
+        "IPriceOracle",
+        "IVault"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/balancer/MockBalancerVault.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "37575e0d87d6ca6d6242a0ffa1f5c061",
+      "sourceName": "contracts/mocks/balancer/MockBalancerVault.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "./MockBalancerPoolToken.sol",
+        "../../Interfaces.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "IBalancerVault",
+        "MockBalancerVault"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/balancer/MockBalancerPoolToken.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "e9cf128dbc68ed606a0df61a4c69e272",
+      "sourceName": "contracts/mocks/balancer/MockBalancerPoolToken.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "MockBalancerPoolToken"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/ExtraRewardsDistributor.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "b213303b01f35036b3fb5edb500c7690",
+      "sourceName": "contracts/ExtraRewardsDistributor.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts-0.8/security/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "ExtraRewardsDistributor"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/node_modules/@openzeppelin/contracts-0.8/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1760019171831,
+      "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
+      "sourceName": "@openzeppelin/contracts-0.8/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/AuraVestedEscrow.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "e3b4b8add981eaa2761582355e373de5",
+      "sourceName": "contracts/AuraVestedEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts-0.8/security/ReentrancyGuard.sol",
+        "./AuraMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "AuraVestedEscrow"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/MockAuraMath.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "cf1d59bc14f0c815fd011e6127230a5c",
+      "sourceName": "contracts/mocks/MockAuraMath.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../AuraMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "MockAuraMath"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/AuraLocker.sol": {
+      "lastModificationDate": 1759178521614,
+      "contentHash": "f6a62c1969bf1b740b614ec69559775e",
+      "sourceName": "contracts/AuraLocker.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts-0.8/access/Ownable.sol",
+        "@openzeppelin/contracts-0.8/security/ReentrancyGuard.sol",
+        "./AuraMath.sol",
+        "./Interfaces.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "AuraLocker",
+        "IRewardStaking"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/BalLiquidityProvider.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "c57461d13dfb88230c0097854a55b458",
+      "sourceName": "contracts/BalLiquidityProvider.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "BalLiquidityProvider"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/AuraStakingProxy.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "b1e3a4da987fbc036ffd107226e29dda",
+      "sourceName": "contracts/AuraStakingProxy.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/utils/Address.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts-0.8/utils/math/SafeMath.sol",
+        "./Interfaces.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "AuraStakingProxy"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/node_modules/@openzeppelin/contracts-0.8/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1760019171851,
+      "contentHash": "a6a9d6c1f662e922b82c1ba4d81cdd48",
+      "sourceName": "@openzeppelin/contracts-0.8/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/AuraBalRewardPool.sol": {
+      "lastModificationDate": 1759178521614,
+      "contentHash": "a636be300b7a79edca431fa706cbb33a",
+      "sourceName": "contracts/AuraBalRewardPool.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AuraMath.sol",
+        "@openzeppelin/contracts-0.8/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol",
+        "./Interfaces.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "AuraBalRewardPool"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/AuraPenaltyForwarder.sol": {
+      "lastModificationDate": 1759178521614,
+      "contentHash": "ee2efea3ce7b87b0714dd0ab9a91557f",
+      "sourceName": "contracts/AuraPenaltyForwarder.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "AuraPenaltyForwarder"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/AuraMerkleDrop.sol": {
+      "lastModificationDate": 1759178521614,
+      "contentHash": "487c53ba70c8033f95fbd96d5957380b",
+      "sourceName": "contracts/AuraMerkleDrop.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/utils/cryptography/MerkleProof.sol",
+        "./Interfaces.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts-0.8/security/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "AuraMerkleDrop"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/node_modules/@openzeppelin/contracts-0.8/utils/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1760019171807,
+      "contentHash": "0b24fe01129b29655a0f7968bfc80db3",
+      "sourceName": "@openzeppelin/contracts-0.8/utils/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/AuraClaimZap.sol": {
+      "lastModificationDate": 1759178521614,
+      "contentHash": "b78d734e4d23a9a465974e26d8833f2f",
+      "sourceName": "contracts/AuraClaimZap.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AuraMath.sol",
+        "./Interfaces.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "AuraClaimZap",
+        "IBasicRewards"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/curve/MockCurveMinter.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "ac64615c0db6749b209ec3f9a2a58c1a",
+      "sourceName": "contracts/mocks/curve/MockCurveMinter.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "IMinter",
+        "MockCurveMinter"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/curve/MockCurveGauge.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "f186abd1376b1b375696c6f06a395d93",
+      "sourceName": "contracts/mocks/curve/MockCurveGauge.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "MockCurveGauge"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/balancer/MockWeightedPool2TokensFactory.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "730d08e7a821b886f8927497e3dd8026",
+      "sourceName": "contracts/mocks/balancer/MockWeightedPool2TokensFactory.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "IWeightedPool2TokensFactory"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/balancer/MockStablePoolFactory.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "d1c2aa5b1aa377da04e3c388923dd4ab",
+      "sourceName": "contracts/mocks/balancer/MockStablePoolFactory.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "IStablePoolFactory"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/balancer/MockInvestmentPoolFactory.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "3ee3bc621e95efa29a4ac0e5e38635c2",
+      "sourceName": "contracts/mocks/balancer/MockInvestmentPoolFactory.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "IInvestmentPool",
+        "IInvestmentPoolFactory"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/balancer/MockBalancerPool.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "dee1a9114c4012e924d97eb11c4a21e3",
+      "sourceName": "contracts/mocks/balancer/MockBalancerPool.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "IBalancerPool"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/balancer/MockFeeDistro.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "210eb3a47c9306d186b04f566ade63b7",
+      "sourceName": "contracts/mocks/balancer/MockFeeDistro.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "IFeeDistributor",
+        "MockFeeDistributor"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/ClaimFeesHelper.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "30726db87cdfd3d1139b7beed0875957",
+      "sourceName": "contracts/ClaimFeesHelper.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/IERC20.sol",
+        "./mocks/balancer/MockFeeDistro.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "ClaimFeesHelper",
+        "IBooster"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/curve/MockVoting.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "be195e36095f8af5d4d0dc62d07af1a2",
+      "sourceName": "contracts/mocks/curve/MockVoting.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "MockVoting"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/mocks/MockVoteStorage.sol": {
+      "lastModificationDate": 1759178521618,
+      "contentHash": "65c10c1b34729c59440d711d37484f80",
+      "sourceName": "contracts/mocks/MockVoteStorage.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "MockVoteStorage"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/123/contracts/test/ERC20Mock.sol": {
+      "lastModificationDate": 1768803568783,
+      "contentHash": "cffcb9a85ee22c73d76866b30a71bbca",
+      "sourceName": "contracts/test/ERC20Mock.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-0.8/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "ERC20Mock"
+      ]
+    }
+  }
+}

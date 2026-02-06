@@ -1,0 +1,2574 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/facets/Gov.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "c281015583d598870d8e40ccebe0ca39",
+      "sourceName": "contracts/facets/Gov.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "diamond-2/contracts/libraries/LibDiamond.sol",
+        "../interfaces/IGov.sol",
+        "../storage/GovStorage.sol",
+        "../storage/PoolStorage.sol",
+        "../storage/SherXStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "Gov"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1759939458017,
+      "contentHash": "e03e12206057e809eb76c5f681170c32",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1759939457961,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/@openzeppelin/contracts/token/ERC20/SafeERC20.sol": {
+      "lastModificationDate": 1759939458013,
+      "contentHash": "33e22842646d746e5c4124c2fdc051aa",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/diamond-2/contracts/libraries/LibDiamond.sol": {
+      "lastModificationDate": 1759939457601,
+      "contentHash": "377bea53f840b5aea21a6e62aefcbaf7",
+      "sourceName": "diamond-2/contracts/libraries/LibDiamond.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IDiamondCut.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "LibDiamond"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/IGov.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "e967a755180f1bea306036355f09239d",
+      "sourceName": "contracts/interfaces/IGov.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ILock.sol",
+        "../interfaces/IRemove.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IGov"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/storage/GovStorage.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "d79db6520e1f7ef2906b41527765c692",
+      "sourceName": "contracts/storage/GovStorage.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "GovStorage"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/storage/PoolStorage.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "1e9f9560e7a85eeaef5b4a4eeb96d626",
+      "sourceName": "contracts/storage/PoolStorage.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ILock.sol",
+        "../interfaces/IStrategy.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PoolStorage"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/storage/SherXStorage.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "831744dca2bb86e8da46add6336056a6",
+      "sourceName": "contracts/storage/SherXStorage.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SherXStorage"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1759939457749,
+      "contentHash": "7aa46886ff5abe7515496208a5e2ce5a",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/diamond-2/contracts/interfaces/IDiamondCut.sol": {
+      "lastModificationDate": 1759939457577,
+      "contentHash": "f1529aa950d9978ee0f06395cabf7fcb",
+      "sourceName": "diamond-2/contracts/interfaces/IDiamondCut.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "IDiamondCut"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/ILock.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "5796e1550f4ad4aa90d7d0ef8a397b33",
+      "sourceName": "contracts/interfaces/ILock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "ILock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/IRemove.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "bec51c16249a86c3c84c3bb43fa9d6a1",
+      "sourceName": "contracts/interfaces/IRemove.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IRemove"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/IStrategy.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "ec845d29890ddabb0c69cf2aa2a63358",
+      "sourceName": "contracts/interfaces/IStrategy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IStrategy"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1759939457861,
+      "contentHash": "8065b340476f61365c076897199425f1",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1759939457781,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/libraries/LibPool.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "a63a956ec37f1c1c9760b22c96e67c9f",
+      "sourceName": "contracts/libraries/LibPool.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "../storage/PoolStorage.sol",
+        "../storage/SherXStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "LibPool"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/facets/SherX.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "3d95efccec38d71693fedc12ca63266f",
+      "sourceName": "contracts/facets/SherX.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ISherX.sol",
+        "../storage/SherXERC20Storage.sol",
+        "../libraries/LibPool.sol",
+        "../libraries/LibSherX.sol",
+        "../libraries/LibSherXERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "SherX"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/ISherX.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "a874fe047acde3677af5a8b1b5105552",
+      "sourceName": "contracts/interfaces/ISherX.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ILock.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "ISherX"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/storage/SherXERC20Storage.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "dccada62252d71430ef25d71a61586a7",
+      "sourceName": "contracts/storage/SherXERC20Storage.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "SherXERC20Storage"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/libraries/LibSherX.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "869b34497bee4f9c093f935c881181ce",
+      "sourceName": "contracts/libraries/LibSherX.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../storage/PoolStorage.sol",
+        "../storage/GovStorage.sol",
+        "./LibSherXERC20.sol",
+        "./LibPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "LibSherX"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/libraries/LibSherXERC20.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "316c064a504ca3e3ca3d142f441611f6",
+      "sourceName": "contracts/libraries/LibSherXERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../storage/SherXERC20Storage.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "LibSherXERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/facets/SherXERC20.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "b6d911158b1b604717d7abd5b32951f8",
+      "sourceName": "contracts/facets/SherXERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "diamond-2/contracts/libraries/LibDiamond.sol",
+        "../interfaces/ISherXERC20.sol",
+        "../libraries/LibSherXERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "SherXERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/ISherXERC20.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "f13340d41858c8c828326141daf625a5",
+      "sourceName": "contracts/interfaces/ISherXERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "ISherXERC20"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/ISherlock.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "a721fb4645b218ec8d190959cfd26291",
+      "sourceName": "contracts/interfaces/ISherlock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "diamond-2/contracts/interfaces/IERC173.sol",
+        "diamond-2/contracts/interfaces/IDiamondLoupe.sol",
+        "diamond-2/contracts/interfaces/IDiamondCut.sol",
+        "./ISherX.sol",
+        "./ISherXERC20.sol",
+        "./IGov.sol",
+        "./IGovDev.sol",
+        "./IPayout.sol",
+        "./IManager.sol",
+        "./IPoolBase.sol",
+        "./IPoolStake.sol",
+        "./IPoolStrategy.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "ISherlock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/diamond-2/contracts/interfaces/IERC173.sol": {
+      "lastModificationDate": 1759939457589,
+      "contentHash": "f3387f58acb6fa03dd33a344b7dc1989",
+      "sourceName": "diamond-2/contracts/interfaces/IERC173.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "IERC173"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/diamond-2/contracts/interfaces/IDiamondLoupe.sol": {
+      "lastModificationDate": 1759939457581,
+      "contentHash": "e50af4a0cfd51054070e7c14d5cb0002",
+      "sourceName": "diamond-2/contracts/interfaces/IDiamondLoupe.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "IDiamondLoupe"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/IGovDev.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "febf5f65b8cc501cab67328f8c3b0277",
+      "sourceName": "contracts/interfaces/IGovDev.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "diamond-2/contracts/libraries/LibDiamond.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IGovDev"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/IPayout.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "9fc17a2d44da500ecafe7a3be4f45af4",
+      "sourceName": "contracts/interfaces/IPayout.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IPayout"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/IManager.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "7288bb376005893e27d358c4307b126a",
+      "sourceName": "contracts/interfaces/IManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IManager"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/IPoolBase.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "6e961a9a261e121215a2cc8719756607",
+      "sourceName": "contracts/interfaces/IPoolBase.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../storage/PoolStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IPoolBase"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/IPoolStake.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "08e6fd16b18297fd3568ab00f39ac1a6",
+      "sourceName": "contracts/interfaces/IPoolStake.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IPoolStake"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/IPoolStrategy.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "2d9c46a1672dcd906b42c3fa419d1043",
+      "sourceName": "contracts/interfaces/IPoolStrategy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "./IStrategy.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IPoolStrategy"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/util/StrategyMock.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "68bb2ec36c8f8f95e7e536808a1e5376",
+      "sourceName": "contracts/util/StrategyMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/IStrategy.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "StrategyMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/util/RemoveMock.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "eb8a0ecb050d235ad34b532ada22deed",
+      "sourceName": "contracts/util/RemoveMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/IRemove.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "RemoveMock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/IStakeAave.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "c147f098569c56f44811d25d06f1f322",
+      "sourceName": "contracts/interfaces/aaveV2/IStakeAave.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IStakeAave"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/strategies/AaveV2.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "6e062d2046f803d2d42c48c23e09c1fc",
+      "sourceName": "contracts/strategies/AaveV2.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/aaveV2/ILendingPool.sol",
+        "../interfaces/aaveV2/ILendingPoolAddressesProvider.sol",
+        "../interfaces/aaveV2/IAaveIncentivesController.sol",
+        "../interfaces/aaveV2/IStakeAave.sol",
+        "../interfaces/aaveV2/IAToken.sol",
+        "../interfaces/IStrategy.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "AaveV2"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1759939457993,
+      "contentHash": "6748815a5b45c4aeeda56819f41190e0",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/ILendingPool.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "c21ed12f13d9a10a7360e3f82181e6a1",
+      "sourceName": "contracts/interfaces/aaveV2/ILendingPool.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ILendingPoolAddressesProvider.sol",
+        "./DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "ILendingPool"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/ILendingPoolAddressesProvider.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "ef4c296e10b6c8099c80531b625f84f9",
+      "sourceName": "contracts/interfaces/aaveV2/ILendingPoolAddressesProvider.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "ILendingPoolAddressesProvider"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/IAaveIncentivesController.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "9e2f7c9e2d102ce627992b2656c2659d",
+      "sourceName": "contracts/interfaces/aaveV2/IAaveIncentivesController.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAaveDistributionManager.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "IAaveIncentivesController"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/IAToken.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "9d9feade154d8bb02299acd47c3b7b8d",
+      "sourceName": "contracts/interfaces/aaveV2/IAToken.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "./IAaveIncentivesController.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IAToken"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/DataTypes.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "7cce27fb2a96693047e8ad8f836c448f",
+      "sourceName": "contracts/interfaces/aaveV2/DataTypes.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "DataTypes"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/IAaveDistributionManager.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "4f9eff1168ab005c689401c6d457a762",
+      "sourceName": "contracts/interfaces/aaveV2/IAaveDistributionManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "DistributionTypes",
+        "IAaveDistributionManager"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/NativeLock.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "0f4439f3d8b07a4095f54b6690eb248e",
+      "sourceName": "contracts/NativeLock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./interfaces/ILock.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "NativeLock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/facets/PoolBase.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "cbe2035fc21d497f05950b168bc236d3",
+      "sourceName": "contracts/facets/PoolBase.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IPoolBase.sol",
+        "../storage/GovStorage.sol",
+        "../libraries/LibPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "PoolBase"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/facets/PoolStrategy.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "34220f8ab5c04fc3dc9b42bbaa626799",
+      "sourceName": "contracts/facets/PoolStrategy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IPoolStrategy.sol",
+        "../storage/GovStorage.sol",
+        "../libraries/LibPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "PoolStrategy"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/facets/Payout.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "e82b110e6d88c59dfa3230da481924c0",
+      "sourceName": "contracts/facets/Payout.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "diamond-2/contracts/libraries/LibDiamond.sol",
+        "../interfaces/IPayout.sol",
+        "../storage/PayoutStorage.sol",
+        "../libraries/LibSherX.sol",
+        "../libraries/LibSherXERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "Payout"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/storage/PayoutStorage.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "f688731cf3fb81238dfaaa9d602b62be",
+      "sourceName": "contracts/storage/PayoutStorage.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PayoutStorage"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/diamond-2/contracts/Diamond.sol": {
+      "lastModificationDate": 1759939457549,
+      "contentHash": "9a3c676235c11469fe6334f753524bcb",
+      "sourceName": "diamond-2/contracts/Diamond.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./libraries/LibDiamond.sol",
+        "./interfaces/IDiamondLoupe.sol",
+        "./interfaces/IDiamondCut.sol",
+        "./interfaces/IERC173.sol",
+        "./interfaces/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "Diamond"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/diamond-2/contracts/interfaces/IERC165.sol": {
+      "lastModificationDate": 1759939457585,
+      "contentHash": "ba51cee12077a4eaf8b52a6cf300404b",
+      "sourceName": "diamond-2/contracts/interfaces/IERC165.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/diamond-2/contracts/facets/DiamondLoupeFacet.sol": {
+      "lastModificationDate": 1759939457569,
+      "contentHash": "acb5ddf9f5113a066f5ea527a89d3840",
+      "sourceName": "diamond-2/contracts/facets/DiamondLoupeFacet.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/LibDiamond.sol",
+        "../interfaces/IDiamondLoupe.sol",
+        "../interfaces/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "DiamondLoupeFacet"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/util/Import.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "b0c809416d06182f2238efdd8637d309",
+      "sourceName": "contracts/util/Import.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "diamond-2/contracts/facets/DiamondCutFacet.sol",
+        "diamond-2/contracts/facets/DiamondLoupeFacet.sol",
+        "diamond-2/contracts/facets/OwnershipFacet.sol",
+        "diamond-2/contracts/Diamond.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "Imports"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/diamond-2/contracts/facets/DiamondCutFacet.sol": {
+      "lastModificationDate": 1759939457561,
+      "contentHash": "2f0d8c47eca817d907da4aff8b0a617c",
+      "sourceName": "diamond-2/contracts/facets/DiamondCutFacet.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IDiamondCut.sol",
+        "../libraries/LibDiamond.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "DiamondCutFacet"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/node_modules/diamond-2/contracts/facets/OwnershipFacet.sol": {
+      "lastModificationDate": 1759939457613,
+      "contentHash": "18648116c79f744353ee556c4cbc9461",
+      "sourceName": "diamond-2/contracts/facets/OwnershipFacet.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/LibDiamond.sol",
+        "../interfaces/IERC173.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.1"
+      ],
+      "artifacts": [
+        "OwnershipFacet"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/facets/PoolOpen.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "78bb0db4b2bf5d3d7d0b26ce02ac4ad9",
+      "sourceName": "contracts/facets/PoolOpen.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "diamond-2/contracts/libraries/LibDiamond.sol",
+        "../interfaces/IPoolStake.sol",
+        "../libraries/LibPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "PoolOpen"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/facets/PoolDevOnly.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "154548d97368160f1e5c514fae6fe7d6",
+      "sourceName": "contracts/facets/PoolDevOnly.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "diamond-2/contracts/libraries/LibDiamond.sol",
+        "./PoolOpen.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "PoolDevOnly"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/facets/GovDev.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "100fa8467fb33af3255e22f6504191a3",
+      "sourceName": "contracts/facets/GovDev.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "diamond-2/contracts/libraries/LibDiamond.sol",
+        "../interfaces/IGovDev.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "GovDev"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/facets/Manager.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "c20afc5a865dc89dc66f164c797f59cc",
+      "sourceName": "contracts/facets/Manager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IManager.sol",
+        "../libraries/LibSherX.sol",
+        "../libraries/LibPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "Manager"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/util/ERC20Mock.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "99800a573eb9e68cf9835adcd5b2f64c",
+      "sourceName": "contracts/util/ERC20Mock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "ERC20Mock",
+        "ERC20Mock6d",
+        "ERC20Mock8d"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/ForeignLock.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "80f97748a735297443c6f82d41c340c9",
+      "sourceName": "contracts/ForeignLock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./interfaces/ISherlock.sol",
+        "./NativeLock.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "ForeignLock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/IAaveGovernanceV2.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "7e86bc5efbcfbc54cfa83a0e8bb85757",
+      "sourceName": "contracts/interfaces/aaveV2/IAaveGovernanceV2.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IExecutorWithTimelock.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IAaveGovernanceV2"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/IExecutorWithTimelock.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "1f01ac973a973dd9c1bac1d0aa62fbce",
+      "sourceName": "contracts/interfaces/aaveV2/IExecutorWithTimelock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAaveGovernanceV2.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IExecutorWithTimelock"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/IProposalValidator.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "08eda2d89cca2d083712f28ea7c56766",
+      "sourceName": "contracts/interfaces/aaveV2/IProposalValidator.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAaveGovernanceV2.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IProposalValidator"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/IGovernanceV2Helper.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "c68404442d6d0f256f6b5088f2f5c4c1",
+      "sourceName": "contracts/interfaces/aaveV2/IGovernanceV2Helper.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAaveGovernanceV2.sol",
+        "./IExecutorWithTimelock.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "IGovernanceV2Helper"
+      ]
+    },
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/21/contracts/interfaces/aaveV2/MockAave.sol": {
+      "lastModificationDate": 1759178522114,
+      "contentHash": "75cf9041c20a7fde13868005bf976841",
+      "sourceName": "contracts/interfaces/aaveV2/MockAave.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.4"
+      ],
+      "artifacts": [
+        "MockAave"
+      ]
+    }
+  }
+}

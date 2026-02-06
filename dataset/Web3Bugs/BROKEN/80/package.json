@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@yield-protocol/yield-utils-v2": "^2.0.1",
+    "hardhat": "^2.26.3"
+  },
+  "dependencies": {
+    "@yield-protocol/utils-v2": "^2.6.18",
+    "@yield-protocol/vault-interfaces": "^2.5.0",
+    "@yield-protocol/yieldspace-interfaces": "^2.3.2",
+    "dss-interfaces": "^0.1.1"
+  }
+}

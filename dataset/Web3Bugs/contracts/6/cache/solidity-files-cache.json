@@ -1,0 +1,46 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/vau3677/liu_coop/new_detector_testing/Web3Bugs/contracts/6/contracts/Beebots.sol": {
+      "lastModificationDate": 1759523247336,
+      "contentHash": "c0512d330f9672cf4d8e35bfefdb1b5e",
+      "sourceName": "contracts/Beebots.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "metadata",
+                "storageLayout",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "Beebots",
+        "BetaToken",
+        "ERC721TokenReceiver",
+        "IERC165",
+        "IERC721",
+        "SafeMath"
+      ]
+    }
+  }
+}
